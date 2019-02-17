@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:500');
+
+@font-face {
+    font-family: "Vazir-Code";
+    src: url("../fonts/Vazir-Code.ttf") format("truetype"),
+        url("../fonts/Vazir-Code.woff") format("woff"),
+        url("../fonts/Vazir-Code.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 300;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #fbf9fa;
+    color: #172339;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #172339;
+    text-decoration: none !important;
+    border-bottom: 1px solid transparent;
+    transition: all 0.1s ease;
+}
+
+a:hover {
+    color: #FF543A;
+}
+
+h1 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+b {
+    background-color: #f8fafc;
+    font-weight: normal;
+}
+
+p {
+    margin: 0;
+    color: #949494;
+    font-size: 13px;
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: "Vazir-Code";
+    font-size: 12px !important;
+    line-height: 1.8;
+}
+
+.hljs {
+    padding: 1rem;
+}
+
+td:first-child {
+    width: 8rem;
+}
+
+.hero {
+    height: 60vh;
+    display: flex;
+    text-align: left;
+    margin: 100px 0;
+}
+
+.hero .row {
+    height: 100%;
+}
+
+.hero .content-section,
+.hero .code-section {
+    align-self: center;
+}
+
+.hero .code-section {
+    background-image: url('../img/bg.svg');
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    display: flex;
+}
+
+.hero .code-box {
+    font-family: "Vazir-Code";
+    background-color: #172339;
+    border-radius: 10px;
+    padding: 60px 20px 20px 20px;
+    position: relative;
+    line-height: 1.8;
+    box-shadow: 0 5px 180px -30px rgba(23, 35, 57, 0.5);
+    align-self: center;
+    width: 100%;
+}
+
+.hero .code-box .windows-controls {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    padding: 0 20px;
+}
+
+.hero .code-box .windows-controls i {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-left: 10px;
+    align-self: center;
+}
+
+.hero .code-box .windows-controls i:nth-child(1) {
+    background-color: #FF0066;
+    margin: 0;
+}
+
+.hero .code-box .windows-controls i:nth-child(2) {
+    background-color: #FFBB00;
+}
+
+.hero .code-box .windows-controls i:nth-child(3) {
+    background-color: #00FF80;
+}
+
+.hero .code-box .code p {
+    color: #FFF;
+    font-size: 12px !important;
+}
+
+.hero .code-box .code p:nth-child(2) {
+    padding: 0 20px;
+}
+
+.hero .code-box .code p:nth-child(2) .key {
+    color: #66d9ef;
+}
+
+.hero .code-box .code p:nth-child(2) .val {
+    color: #f1fa8c;
+}
+
+.github-link {
+    display: flex;
+    background-color: #172339;
+    color: #FFF;
+    width: fit-content;
+    width: -moz-fit-content;
+    width: -webkit-fit-content;
+    padding: 15px 30px;
+    border-radius: 10px;
+    transition: 0.2s transform ease;
+    margin-top: 20px;
+}
+
+.github-link:hover {
+    transform: translateY(2px);
+    color: #FFF;
+}
+
+.github-link svg {
+    width: 24px;
+    height: 24px;
+    align-self: center;
+    margin-right: 12px;
+}
+
+.github-link span {
+    font-size: 14px;
+    align-self: center;
+}
+
+.intro {
+    text-align: center;
+    margin: 100px 0;
+}
+
+.intro span {
+    font-size: 16px;
+    margin: 15px 0 10px 0;
+    display: block;
+}
+
+.intro .intro-info {
+    margin-top: 70px;
+}
+
+.intro .intro-info .intro-card svg {
+    width: 72px;
+    height: 72px;
+    display: block;
+    margin: 0 auto;
+}
+
+.example {
+    margin: 150px 0;
+}
+
+.example .try {
+    display: flex;
+}
+
+.example #run-button {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    background-color: #172339;
+    color: #FFF;
+    border: none;
+    width: 100%;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s transform ease;
+    outline: none;
+}
+
+.example #run-button svg {
+    width: 24px;
+    height: 24px;
+    align-self: center;
+    margin-left: 12px;
+}
+
+.example #run-button:hover {
+    transform: translateY(2px);
+}
+
+.example #run-message {
+    opacity: 0;
+    transition: all 0.1s ease;
+    font-size: 14px;
+}
+
+.example .run-message {
+    margin-top: 20px;
+}
+
+.example pre {
+    background: #F4F0EF;
+    border-radius: 10px;
+    margin: 0;
+}
+
+.example #result {
+    opacity: 0;
+    transition: all 0.1s ease;
+}
+
+.example .hljs {
+    background-color: transparent;
+    min-height: 170px;
+    padding: 20px;
+    color: #172339;
+}
+
+.hljs-string,
+.hljs-doctag {
+    color: #FF543A;
+}
+
+.example p {
+    margin-bottom: 20px;
+}
+
+.resources p:first-child {
+    margin-bottom: 20px;
+}
+
+.resources ul {
+    padding: 15px;
+    margin: 40px 0 0 0;
+}
+
+.resources ul li {
+    list-style: none;
+}
+
+.resources .item {
+    width: 100%;
+    display: flex;
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #e0dede;
+}
+
+.resources ul li:last-child .item {
+    border: none;
+}
+
+.resources .item p {
+    margin: 0;
+    color: #172339;
+    transition: all 0.1s ease;
+}
+
+.resources .item:hover p {
+    color: #FF543A;
+}
+
+.resources .item span {
+    font-size: 12px !important;
+    color: #949494;
+    transition: all 0.1s ease;
+}
+
+.resources .item:hover span {
+    color: #172339;
+}
+
+.resources .item svg {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.resources .image svg {
+    width: 100%;
+}
+
+.case {
+    width: 100%;
+    height: 90%;
+    margin-top: 40px;
+    background-image: url('../img/pattern.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
+.case .circle {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    background: #FFF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 5px 140px -25px rgba(23, 35, 57, 0.4);
+    animation: bounce 3s ease-in-out infinite
+}
+
+.case .circle.one {
+    top: 20%;
+    left: 35%;
+    animation-delay: 1s;
+}
+
+.case .circle.two {
+    top: 55%;
+    left: 20%;
+    animation-delay: 1.7s;
+}
+
+.case .circle.three {
+    top: 40%;
+    left: 55%;
+    animation-delay: 2s;
+}
+
+.case .circle.four {
+    top: 80%;
+    left: 70%;
+    animation-delay: 1.2s;
+}
+
+.case .circle.five {
+    top: 5%;
+    left: 75%;
+    animation-delay: 1.5s;
+}
+
+.case .circle svg {
+    align-self: center;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0)
+    }
+
+    50% {
+        transform: translateY(15px)
+    }
+
+    100% {
+        transform: translateY(0)
+    }
+}
+
+footer {
+    padding: 100px 0;
+    background-color: transparent;
+    text-align: center;
+}
+
+footer p {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+footer svg {
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    align-self: center;
+}
+
+footer a {
+    margin-left: 5px;
+}
+
+
+@media only screen and (max-width: 991px) {
+    h1 {
+        font-size: 32px;
+        letter-spacing: 1px;
+        margin-bottom: 15px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .hero {
+        text-align: center;
+        height: auto;
+        margin: 80px 0 0 0;
+    }
+
+    .hero .row {
+        height: auto;
+    }
+
+    .github-link {
+        margin: 15px auto 0 auto;
+    }
+
+    .github-link:hover {
+        transform: none;
+    }
+
+    .hero .code-section {
+        background: none;
+        margin: 80px 0;
+    }
+
+    .hero .code-box {
+        text-align: left;
+    }
+
+    .intro {
+        margin: 20px 0;
+    }
+
+    .example {
+        margin: 80px 0;
+    }
+
+    .example .try {
+        margin: 15px 0;
+    }
+
+    .example #run-button svg {
+        transform: rotate(90deg);
+    }
+
+    .example #run-button:hover {
+        transform: none;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .intro .intro-info {
+        margin-top: 30px;
+    }
+
+    .intro-card {
+        margin: 30px 0;
+    }
+
+    .resources ul {
+        margin: 20px 0 0 0;
+    }
+
+    .case {
+        display: none;
+    }
+
+    footer {
+        padding: 80px 0;
+    }
+}
