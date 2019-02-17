@@ -148,11 +148,11 @@ td:first-child {
 }
 
 .hero .code-box .code p:nth-child(2) .key {
-    color: #66d9ef;
+    color: #00FFF7;
 }
 
 .hero .code-box .code p:nth-child(2) .val {
-    color: #f1fa8c;
+    color: #FFF700;
 }
 
 .github-link {
@@ -489,6 +489,10 @@ footer a {
 }
 
 @media only screen and (max-width: 767px) {
+    h1 {
+        font-size: 28px;
+    }
+
     .intro .intro-info {
         margin-top: 30px;
     }
