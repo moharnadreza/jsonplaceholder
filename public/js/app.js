@@ -9,7 +9,7 @@
  // Run example
  var runButton = document.getElementById('run-button')
  runButton.onclick = function () {
-   var root = location.protocol + '//https://jsonplaceholder.ir'
+   var root = location.protocol + '//jsonplaceholder.ir'
    var runMessage = document.getElementById('run-message')
 
    // Hide or disable things during API call

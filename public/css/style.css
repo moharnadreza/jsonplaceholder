@@ -207,6 +207,11 @@ td:first-child {
     margin: 0 auto;
 }
 
+p.intro {
+    max-width: 50%;
+    margin: auto;
+}
+
 .example {
     margin: 150px 0;
 }
@@ -409,6 +414,7 @@ footer {
     padding: 100px 0;
     background-color: transparent;
     text-align: center;
+    line-height: 1.75;
 }
 
 footer p {
@@ -499,6 +505,11 @@ footer a {
 
     .intro-card {
         margin: 30px 0;
+    }
+
+    p.intro {
+        max-width: 100%;
+        margin: 0;
     }
 
     .resources ul {
