@@ -1,7 +1,7 @@
 {
   "name": "jsonplaceholder",
   "version": "0.3.3",
-  "description": "A simple fake REST API server for testing and prototyping.",
+  "description": "Persian Fake online REST API server for testing and prototyping.",
   "keywords": [
     "fake",
     "JSON",
