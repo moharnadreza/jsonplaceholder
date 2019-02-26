@@ -12,21 +12,21 @@
 body {
     font-family: 'Quicksand', sans-serif;
     background-color: #fbf9fa;
-    color: #172339;
+    color: #0C2D4E;
     line-height: 1.5;
     margin: 0;
     padding: 0;
 }
 
 a {
-    color: #172339;
+    color: #0C2D4E;
     text-decoration: none !important;
     border-bottom: 1px solid transparent;
     transition: all 0.1s ease;
 }
 
 a:hover {
-    color: #FF543A;
+    color: #ff0844;
 }
 
 h1 {
@@ -97,7 +97,7 @@ td:first-child {
 
 .hero .code-box {
     font-family: "Vazir-Code";
-    background-color: #172339;
+    background-color: #0C2D4E;
     border-radius: 10px;
     padding: 60px 20px 20px 20px;
     position: relative;
@@ -126,7 +126,7 @@ td:first-child {
 }
 
 .hero .code-box .windows-controls i:nth-child(1) {
-    background-color: #FF0066;
+    background-color: #ff0844;
     margin: 0;
 }
 
@@ -148,16 +148,16 @@ td:first-child {
 }
 
 .hero .code-box .code p:nth-child(2) .key {
-    color: #00FFF7;
+    color: #00FFF6;
 }
 
 .hero .code-box .code p:nth-child(2) .val {
-    color: #FFF700;
+    color: #FFEE00;
 }
 
 .github-link {
     display: flex;
-    background-color: #172339;
+    background-color: #0C2D4E;
     color: #FFF;
     width: fit-content;
     width: -moz-fit-content;
@@ -224,7 +224,7 @@ p.intro {
     display: flex;
     justify-content: center;
     align-self: center;
-    background-color: #172339;
+    background-color: #0C2D4E;
     color: #FFF;
     border: none;
     width: 100%;
@@ -272,12 +272,12 @@ p.intro {
     background-color: transparent;
     min-height: 170px;
     padding: 20px;
-    color: #172339;
+    color: #0C2D4E;
 }
 
 .hljs-string,
 .hljs-doctag {
-    color: #FF543A;
+    color: #ff0844;
 }
 
 .example p {
@@ -311,12 +311,12 @@ p.intro {
 
 .resources .item p {
     margin: 0;
-    color: #172339;
+    color: #0C2D4E;
     transition: all 0.1s ease;
 }
 
 .resources .item:hover p {
-    color: #FF543A;
+    color: #ff0844;
 }
 
 .resources .item span {
@@ -326,7 +326,7 @@ p.intro {
 }
 
 .resources .item:hover span {
-    color: #172339;
+    color: #0C2D4E;
 }
 
 .resources .item svg {

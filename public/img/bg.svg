@@ -1,37 +1,37 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="978.809" height="1040.544" viewBox="0 0 978.809 1040.544">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1037.309" height="1109.044" viewBox="0 0 1037.309 1109.044">
   <defs>
-    <linearGradient id="linear-gradient" x1="0.915" y1="0.829" x2="0.146" y2="0.099" gradientUnits="objectBoundingBox">
-      <stop offset="0" stop-color="#fe9484"/>
-      <stop offset="1" stop-color="#ff543a"/>
+    <linearGradient id="linear-gradient" x1="0.937" y1="1" x2="0.106" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffb199"/>
+      <stop offset="1" stop-color="#ff0844"/>
     </linearGradient>
     <filter id="Path_19" x="0" y="0" width="872.65" height="944" filterUnits="userSpaceOnUse">
       <feOffset dy="40" input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="49.5" result="blur"/>
-      <feFlood flood-color="#ff9484" flood-opacity="0.8"/>
+      <feFlood flood-color="#ffb199" flood-opacity="0.8"/>
       <feComposite operator="in" in2="blur"/>
       <feComposite in="SourceGraphic"/>
     </filter>
-    <linearGradient id="linear-gradient-2" x1="0.544" y1="0.088" x2="0.51" y2="0.902" gradientUnits="objectBoundingBox">
-      <stop offset="0" stop-color="#374254"/>
-      <stop offset="1" stop-color="#273246"/>
+    <linearGradient id="linear-gradient-2" x1="0.876" y1="-0.286" x2="0.218" y2="1.311" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffa292"/>
+      <stop offset="1" stop-color="#ff134a"/>
     </linearGradient>
-    <filter id="Path_21" x="333.975" y="320.942" width="644.834" height="719.602" filterUnits="userSpaceOnUse">
-      <feOffset dy="16" input="SourceAlpha"/>
-      <feGaussianBlur stdDeviation="30" result="blur-2"/>
-      <feFlood flood-color="#838c97"/>
+    <filter id="Path_21" x="275.475" y="272.442" width="761.834" height="836.602" filterUnits="userSpaceOnUse">
+      <feOffset dy="26" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="49.5" result="blur-2"/>
+      <feFlood flood-color="#ffb199"/>
       <feComposite operator="in" in2="blur-2"/>
       <feComposite in="SourceGraphic"/>
     </filter>
-    <linearGradient id="linear-gradient-3" x1="0" y1="1" x2="0.826" y2="-0.173" xlink:href="#linear-gradient"/>
-    <filter id="Ellipse_2" x="67.718" y="711.949" width="292" height="292" filterUnits="userSpaceOnUse">
-      <feOffset dy="25" input="SourceAlpha"/>
+    <linearGradient id="linear-gradient-3" x1="-0.155" y1="1.154" x2="1" xlink:href="#linear-gradient"/>
+    <filter id="Ellipse_2" x="67.718" y="705.949" width="292" height="292" filterUnits="userSpaceOnUse">
+      <feOffset dy="19" input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="33" result="blur-3"/>
-      <feFlood flood-color="#ff9484"/>
+      <feFlood flood-color="#ffb199"/>
       <feComposite operator="in" in2="blur-3"/>
       <feComposite in="SourceGraphic"/>
     </filter>
   </defs>
-  <g id="Group_13" data-name="Group 13" transform="translate(36.654 -55.61)">
+  <g id="Group_10" data-name="Group 10" transform="translate(36.654 -55.61)">
     <g id="Ellipse_7" data-name="Ellipse 7" transform="translate(161.846 1000.154) rotate(-90)" fill="#b1b1b1" stroke="#b1b1b1" stroke-width="1">
       <circle cx="1.5" cy="1.5" r="1.5" stroke="none"/>
       <circle cx="1.5" cy="1.5" r="1" fill="none"/>
