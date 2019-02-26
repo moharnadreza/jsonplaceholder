@@ -3,6 +3,11 @@
 [Persian JSONPlaceholder](https://jsonplaceholder.ir) is a simple Persian fake REST API for testing and prototyping.
 
 
+<a href="https://jsonplaceholder.ir/" target="_blank">
+  <img src="./public/img/pj.png">
+</a>
+
+
 ## Why?
 
 Most of the time when trying a new library, hacking a prototype or following a tutorial, I found myself in need of some Persian data, So I decided to make Persian version of https://jsonplaceholder.typicode.com.
