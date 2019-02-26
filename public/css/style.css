@@ -155,6 +155,11 @@ td:first-child {
     color: #FFEE00;
 }
 
+.hero .subtitle .links {
+    display: flex;
+    margin-top: 20px;
+}
+
 .github-link {
     display: flex;
     background-color: #0C2D4E;
@@ -165,7 +170,7 @@ td:first-child {
     padding: 15px 30px;
     border-radius: 10px;
     transition: 0.2s transform ease;
-    margin-top: 20px;
+    align-self: center;
 }
 
 .github-link:hover {
@@ -181,6 +186,40 @@ td:first-child {
 }
 
 .github-link span {
+    font-size: 14px;
+    align-self: center;
+}
+
+.about-link {
+    display: flex;
+    color: #0C2D4E;
+    width: fit-content;
+    width: -moz-fit-content;
+    width: -webkit-fit-content;
+    padding: 15px 30px;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+    align-self: center;
+}
+
+.about-link:hover {
+    color: #ff0844;
+}
+
+.about-link svg {
+    width: 24px;
+    height: 24px;
+    align-self: center;
+    margin-right: 5px;
+    fill: #0C2D4E;
+    transition: all 0.2s ease;
+}
+
+.about-link:hover svg {
+    fill: #ff0844;
+}
+
+.about-link span {
     font-size: 14px;
     align-self: center;
 }
@@ -456,8 +495,9 @@ footer a {
         height: auto;
     }
 
-    .github-link {
-        margin: 15px auto 0 auto;
+    .hero .subtitle .links {
+        margin-top: 40px;
+        justify-content: center;
     }
 
     .github-link:hover {
@@ -494,6 +534,10 @@ footer a {
     }
 }
 
+@media only screen and (max-width: 892px) {
+    
+}
+
 @media only screen and (max-width: 767px) {
     h1 {
         font-size: 28px;
@@ -505,6 +549,19 @@ footer a {
 
     .intro-card {
         margin: 30px 0;
+    }
+
+    .hero .subtitle .links {
+        display: block;
+        width: 100%;
+    }
+
+    .github-link, .about-link {
+        margin: auto;
+    }
+
+    .about-link {
+        margin-top: 20px;
     }
 
     p.intro {
