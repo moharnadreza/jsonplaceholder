@@ -4,7 +4,7 @@
 
 
 <a href="https://jsonplaceholder.ir/" target="_blank">
-  <img src="./public/img/pj.jpg">
+  <img src="./public/img/persianjsonplaceholder.jpg">
 </a>
 
 
