@@ -165,3 +165,40 @@ Here's the list of available nested routes:
 * https://jsonplaceholder.ir/users/1/albums
 * https://jsonplaceholder.ir/users/1/todos
 * https://jsonplaceholder.ir/users/1/posts
+
+
+
+### use jsonplaceholder with graphql technology 
+
+All of the requests have to come in https://jsonplaceholder.ir/graphql route with different queries
+
+different type of queries and get needed params for each one
+
+queryAllPosts="{posts {title body}}"
+queryAllComments="{comments {name email}}"
+queryAllAlbums="{albums {userId title}}"
+queryAllPhotos="{photos {title url}}"
+queryAllTodos="{todos {title completed}}"
+queryAllUsers="{users {username email}}"
+
+queryOnePost="{post(id:2) {title body}}"
+queryOneComment="{comment(id:3) {name email}}"
+queryOneAlbum="{album(id:4) {userId title}}"
+queryOnePhoto="{photo(id:5) {title url}}"
+queryOneTodo="{todo(id:6) {title completed}}"
+queryOneUser="{user(id:7) {username email}}"
+
+
+
+```js
+// used request package to send request and sending data have to be in json format and sending mwthod have to be post 
+request({
+    method:'POST',
+    url:'http://localhost:3000/graphql',
+    json:{
+        "query":queryOneComment
+    }
+},(err,res,body)=>{
+    console.log(body)
+})
+```
