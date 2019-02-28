@@ -193,13 +193,14 @@ let queryOneTodo="{todo(id:6) {title completed}}"
 let queryOneUser="{user(id:7) {username email}}"
 
 // used request package to send request and sending data have to be in json format and sending mwthod have to be post 
-request({
-    method:'POST',
-    url:'http://localhost:3000/graphql',
-    json:{
-        "query":queryOneComment
+fetch('http://jsonplaceholder.ir/graphql', {
+    method: 'POST',
+    body: JSON.stringify(queryOneUser),
+    headers: {
+      "Content-type": "application/json; charset=UTF-8"
     }
-},(err,res,body)=>{
-    console.log(body)
-})
+  })
+  .then(response => response.json())
+  .then(json => console.log(json))
+
 ```
