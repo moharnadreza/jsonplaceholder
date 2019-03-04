@@ -192,11 +192,11 @@ let queryOneUser = "{ user(id:7) { username email } }"
 
 
 
-// Get data as JSON file format
+// Fetch data as JSON file format
 const request = require('request');
 
 request({
-    method: 'GET',
+    method: 'POST',
     url: 'https://jsonplaceholder.ir/graphql',
     json: {
         "query": queryOnePhoto
@@ -207,9 +207,9 @@ request({
 
 
 
-// Or use request package to get data as JSON file format
+// Or use request package to Fetch data as JSON file format
 fetch('https://jsonplaceholder.ir/graphql', {
-    method: 'GET',
+    method: 'POST',
     body: JSON.stringify(queryOneUser),
     headers: {
       "Content-type": "application/json; charset=UTF-8"
