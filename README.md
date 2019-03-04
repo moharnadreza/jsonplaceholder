@@ -208,7 +208,7 @@ request({
 
 
 
-// Or use request package to Fetch data as JSON file format
+// Or use request package to fetch data as JSON file format
 fetch('https://jsonplaceholder.ir/graphql', {
     method: 'POST',
     body: JSON.stringify(queryOneUser),
