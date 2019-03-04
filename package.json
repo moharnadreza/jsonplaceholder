@@ -26,7 +26,7 @@
     "url": "https://github.com/ziadzadeh/PersianJSONPlaceholder.git"
   },
   "scripts": {
-    "start": "nodemon index",
+    "start": "node index",
     "test": "node test/app"
   },
   "dependencies": {
