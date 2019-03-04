@@ -183,12 +183,13 @@ let queryAllTodos = "{ todos { title completed } }"
 let queryAllUsers = "{ users { username email } }"
 
 // For example:get specific data by id
-let queryOnePost = "{ post(id:2)  {title body } }"
+let queryOnePost = "{ post(id:2)  { title body } }"
 let queryOneComment = "{ comment(id:3) { name email } }"
 let queryOneAlbum = "{ album(id:4) { userId title } }"
 let queryOnePhoto = "{ photo(id:5) { title url } }"
 let queryOneTodo = "{ todo(id:6) { title completed } }"
 let queryOneUser = "{ user(id:7) { username email } }"
+// and ...
 
 
 
