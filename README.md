@@ -168,33 +168,44 @@ Here's the list of available nested routes:
 
 
 
-### use jsonplaceholder with graphql technology 
+### use JSONPlaceholder with GraphQL 
 
-All of the requests have to come in https://jsonplaceholder.ir/graphql route with different queries
-
-different type of queries and get needed params for each one
+All of the requests are in https://jsonplaceholder.ir/graphql route with different queries, different type of queries and get needed params for each one
 
 
 ```js
-//get all data for one topic
-let queryAllPosts="{posts {title body}}"
-let queryAllComments="{comments {name email}}"
-let queryAllAlbums="{albums {userId title}}"
-let queryAllPhotos="{photos {title url}}"
-let queryAllTodos="{todos {title completed}}"
-let queryAllUsers="{users {username email}}"
+//For example:get all data for one topic
+let queryAllPosts = "{ posts { title body } }"
+let queryAllComments = "{ comments { name email } }"
+let queryAllAlbums = "{ albums { userId title } }"
+let queryAllPhotos = "{ photos { title url } }"
+let queryAllTodos = "{ todos { title completed } }"
+let queryAllUsers = "{ users { username email } }"
 
-//get specific data by id
-let queryOnePost="{post(id:2) {title body}}"
-let queryOneComment="{comment(id:3) {name email}}"
-let queryOneAlbum="{album(id:4) {userId title}}"
-let queryOnePhoto="{photo(id:5) {title url}}"
-let queryOneTodo="{todo(id:6) {title completed}}"
-let queryOneUser="{user(id:7) {username email}}"
+//For example:get specific data by id
+let queryOnePost = "{ post(id:2)  {title body } }"
+let queryOneComment = "{ comment(id:3) { name email } }"
+let queryOneAlbum = "{ album(id:4) { userId title } }"
+let queryOnePhoto = "{ photo(id:5) { title url } }"
+let queryOneTodo = "{ todo(id:6) { title completed } }"
+let queryOneUser = "{ user(id:7) { username email } }"
 
-// used request package to send request and sending data have to be in json format and sending mwthod have to be post 
-fetch('http://jsonplaceholder.ir/graphql', {
-    method: 'POST',
+// Get data in JSON format
+const request = require('request');
+
+request({
+    method: 'GET',
+    url: 'https://graph.liara.run/graphql',
+    json: {
+        "query": queryOnePhoto
+    }
+}, (err, res, body) => {
+    console.log(body)
+})
+
+// Or use request package to get data in JSON format
+fetch('https://jsonplaceholder.ir/graphql', {
+    method: 'GET',
     body: JSON.stringify(queryOneUser),
     headers: {
       "Content-type": "application/json; charset=UTF-8"

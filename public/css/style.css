@@ -13,7 +13,7 @@ body {
     font-family: 'Quicksand', sans-serif;
     background-color: #fbf9fa;
     color: #0C2D4E;
-    line-height: 1.5;
+    line-height: 1.75;
     margin: 0;
     padding: 0;
 }
@@ -321,6 +321,10 @@ p.intro {
 
 .example p {
     margin-bottom: 20px;
+}
+
+.example p.graphql {
+    margin-bottom: 0 !important;
 }
 
 .resources p:first-child {
