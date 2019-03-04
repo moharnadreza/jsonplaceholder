@@ -170,7 +170,7 @@ Here's the list of available nested routes:
 
 ### Use JSONPlaceholder with GraphQL 
 
-All of the requests are in https://jsonplaceholder.ir/graphql route with different queries and get needed params for each one
+All of the requests are available in https://jsonplaceholder.ir/graphql with different queries, get needed params for each one :)
 
 
 ```js
