@@ -1,5 +1,10 @@
+/**
+ * required packages
+ */
 const jsonServer = require('json-server')
 const clone = require('clone')
+const {ApolloServer,gql}=require('apollo-server-express');
+
 const data = require('../data.json')
 
 const app = jsonServer.create()
