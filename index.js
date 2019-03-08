@@ -1,4 +1,9 @@
 /**
+ * use env file to config
+ */
+const dotenv = require('dotenv').config()
+
+/**
  * required packages
  */
 const jsonServer = require('json-server')
@@ -29,8 +34,8 @@ const router = jsonServer.router(clone(data), { _isFake: true })
 /**
  * required controllers and configs for graphql
  */
- const typeDefs=require('./graphql/typeDefs');
- const resolvers=require('./graphql/resolvers');
+ const typeDefs = require('./graphql/typeDefs');
+ const resolvers = require('./graphql/resolvers');
 
 /**
  * make apollo server
