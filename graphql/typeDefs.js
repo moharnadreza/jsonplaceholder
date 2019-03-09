@@ -14,12 +14,12 @@ const typeDefs = gql`
    photos:[Photo],
    todos:[Todo],
    users:[User],
-   post(id:Int):Post,
-   comment(id:Int):Comment,
-   album(id:Int):Album,
-   photo(id:Int):Photo,
-   todo(id:Int):Todo,
-   user(id:Int):User
+   post(id:Int!):Post,
+   comment(id:Int!):Comment,
+   album(id:Int!):Album,
+   photo(id:Int!):Photo,
+   todo(id:Int!):Todo,
+   user(id:Int!):User
  }
 
  type Post {
