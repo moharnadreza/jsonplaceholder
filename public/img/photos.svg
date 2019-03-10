@@ -1,0 +1,13 @@
+<svg id="image-outline" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="107.465" height="107.465" viewBox="0 0 107.465 107.465">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.945" y1="-0.177" x2="0.102" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffb199"/>
+      <stop offset="1" stop-color="#ff0844"/>
+    </linearGradient>
+  </defs>
+  <g id="image">
+    <rect id="Rectangle_4" data-name="Rectangle 4" width="107.465" height="107.465" opacity="0" fill="url(#linear-gradient)"/>
+    <path id="Path_13" data-name="Path 13" d="M70.165,3H16.433A13.433,13.433,0,0,0,3,16.433V70.165A13.433,13.433,0,0,0,16.433,83.6H70.165A13.433,13.433,0,0,0,83.6,70.165V16.433A13.433,13.433,0,0,0,70.165,3ZM16.433,11.955H70.165a4.478,4.478,0,0,1,4.478,4.478V53.867L60.314,41.642a12.4,12.4,0,0,0-15.761,0l-32.6,27.18V16.433A4.478,4.478,0,0,1,16.433,11.955ZM70.165,74.643H18.941l31.344-26.15a3.493,3.493,0,0,1,4.164,0L74.643,65.688v4.478A4.478,4.478,0,0,1,70.165,74.643Z" transform="translate(10.433 10.433)" fill="url(#linear-gradient)"/>
+    <ellipse id="Ellipse_6" data-name="Ellipse 6" cx="6.717" cy="6.717" rx="6.717" ry="6.717" transform="translate(29.105 31.344)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

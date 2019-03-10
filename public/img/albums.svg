@@ -1,0 +1,13 @@
+<svg id="archive-outline" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="107.508" height="107.508" viewBox="0 0 107.508 107.508">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.945" y1="-0.177" x2="0.102" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffb199"/>
+      <stop offset="1" stop-color="#ff0844"/>
+    </linearGradient>
+  </defs>
+  <g id="archive">
+    <rect id="Rectangle_7" data-name="Rectangle 7" width="107.508" height="107.508" transform="translate(107.508) rotate(90)" opacity="0" fill="url(#linear-gradient)"/>
+    <path id="Path_18" data-name="Path 18" d="M83.57,16.439A13.439,13.439,0,0,0,70.131,3H16.377A13.439,13.439,0,0,0,7.418,26.383v43.81A13.439,13.439,0,0,0,20.857,83.631h44.8A13.439,13.439,0,0,0,79.09,70.193V26.383a13.439,13.439,0,0,0,4.48-9.945Zm-67.193-4.48H70.131a4.48,4.48,0,0,1,0,8.959H16.377a4.48,4.48,0,1,1,0-8.959ZM70.131,70.193a4.48,4.48,0,0,1-4.48,4.48h-44.8a4.48,4.48,0,0,1-4.48-4.48V29.877H70.131Z" transform="translate(10.5 10.439)" fill="url(#linear-gradient)"/>
+    <rect id="Rectangle_8" data-name="Rectangle 8" width="26.877" height="8.959" rx="0.87" transform="translate(40.316 53.754)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

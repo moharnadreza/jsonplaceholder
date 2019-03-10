@@ -1,0 +1,11 @@
+<svg id="arrow-circle-right-outline" xmlns="http://www.w3.org/2000/svg" width="24"
+height="24" viewBox="0 0 24 24">
+    <g id="arrow-circle-right">
+        <rect id="Rectangle_1" data-name="Rectangle 1" width="24" height="24" transform="translate(0 24) rotate(-90)"
+        fill="#fff" opacity="0" />
+        <path id="Path_7" data-name="Path 7" d="M17,12v-.09a.88.88,0,0,0-.06-.28.72.72,0,0,0-.11-.19,1,1,0,0,0-.09-.13l-2.86-3a1,1,0,0,0-1.45,1.38L13.66,11H8a1,1,0,0,0,0,2h5.59l-1.3,1.29a1,1,0,1,0,1.42,1.42l3-3A1.038,1.038,0,0,0,17,12Z"
+        fill="#fff" />
+        <path id="Path_8" data-name="Path 8" d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm0,18a8,8,0,1,1,8-8A8,8,0,0,1,12,20Z"
+        fill="#fff" />
+    </g>
+</svg>

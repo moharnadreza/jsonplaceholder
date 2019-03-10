@@ -1,0 +1,13 @@
+<svg id="checkmark-circle-outline" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="107.406" height="107.406" viewBox="0 0 107.406 107.406">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.945" y1="-0.177" x2="0.102" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffb199"/>
+      <stop offset="1" stop-color="#ff0844"/>
+    </linearGradient>
+  </defs>
+  <g id="checkmark-circle">
+    <rect id="Rectangle_5" data-name="Rectangle 5" width="107.406" height="107.406" opacity="0" fill="url(#linear-gradient)"/>
+    <path id="Path_14" data-name="Path 14" d="M15.667,29.56a4.494,4.494,0,0,0-6.355,6.355L22.738,49.341a4.343,4.343,0,0,0,6.4-.224l31.327-35.8a4.475,4.475,0,0,0-6.713-5.907L25.915,39.63Z" transform="translate(27.788 20.965)" fill="url(#linear-gradient)"/>
+    <path id="Path_15" data-name="Path 15" d="M86.85,42.277a4.475,4.475,0,0,0-4.475,4.475,35.791,35.791,0,1,1-35.8-35.8,39.338,39.338,0,0,1,8.5.985,4.475,4.475,0,1,0,2.1-8.682A47.169,47.169,0,0,0,46.573,2,44.753,44.753,0,1,0,91.326,46.753a4.475,4.475,0,0,0-4.475-4.475Z" transform="translate(7.13 6.951)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

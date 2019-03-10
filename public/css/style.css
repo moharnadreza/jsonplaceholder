@@ -178,7 +178,7 @@ td:first-child {
     color: #FFF;
 }
 
-.github-link svg {
+.github-link img {
     width: 24px;
     height: 24px;
     align-self: center;
@@ -239,7 +239,7 @@ td:first-child {
     margin-top: 70px;
 }
 
-.intro .intro-info .intro-card svg {
+.intro .intro-info .intro-card img {
     width: 72px;
     height: 72px;
     display: block;
@@ -275,7 +275,7 @@ p.intro {
     outline: none;
 }
 
-.example #run-button svg {
+.example #run-button img {
     width: 24px;
     height: 24px;
     align-self: center;
@@ -372,13 +372,13 @@ p.intro {
     color: #0C2D4E;
 }
 
-.resources .item svg {
+.resources .item img {
     width: 24px;
     height: 24px;
     margin-right: 10px;
 }
 
-.resources .image svg {
+.resources .image img {
     width: 100%;
 }
 

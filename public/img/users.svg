@@ -1,0 +1,13 @@
+<svg id="person-outline" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="107.39" height="107.39" viewBox="0 0 107.39 107.39">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.945" y1="-0.177" x2="0.102" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffb199"/>
+      <stop offset="1" stop-color="#ff0844"/>
+    </linearGradient>
+  </defs>
+  <g id="person">
+    <rect id="Rectangle_6" data-name="Rectangle 6" width="107.39" height="107.39" opacity="0" fill="url(#linear-gradient)"/>
+    <path id="Path_16" data-name="Path 16" d="M25.9,38.8A17.9,17.9,0,1,0,8,20.9,17.9,17.9,0,0,0,25.9,38.8Zm0-26.847A8.949,8.949,0,1,1,16.949,20.9,8.949,8.949,0,0,1,25.9,11.949Z" transform="translate(27.797 10.424)" fill="url(#linear-gradient)"/>
+    <path id="Path_17" data-name="Path 17" d="M36.322,13A31.322,31.322,0,0,0,5,44.322a4.475,4.475,0,0,0,8.949,0,22.373,22.373,0,1,1,44.746,0,4.475,4.475,0,1,0,8.949,0A31.322,31.322,0,0,0,36.322,13Z" transform="translate(17.373 45.17)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>
