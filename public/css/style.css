@@ -345,6 +345,7 @@ p.intro {
     display: flex;
     padding: 15px;
     text-align: left;
+    line-height: 1.5;
     border-bottom: 1px solid #e0dede;
 }
 
@@ -466,7 +467,7 @@ footer p {
     justify-content: center;
 }
 
-footer svg {
+footer img {
     width: 12px;
     height: 12px;
     margin: 0 5px;
