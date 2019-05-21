@@ -2,7 +2,7 @@
 
 [Persian JSONPlaceholder](https://jsonplaceholder.ir) is a simple Persian fake REST API for testing and prototyping.
 
-Read [this post on Virgool](https://virgool.io/@themzed/persianjsonplaceholder-mtwhgc0poehp) for more information about it.
+Read [this post on Virgool.io](https://virgool.io/raychat/persianjsonplaceholder-mtwhgc0poehp) for more information about it.
 
 ## Why?
 
