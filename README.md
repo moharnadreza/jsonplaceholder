@@ -221,7 +221,6 @@ fetch('https://jsonplaceholder.ir/graphql', {
 
 ```
 
-
 ## ToDo
 
 - Add pagination
