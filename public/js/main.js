@@ -25,8 +25,8 @@
        // Format result
        result.innerHTML =
          str.replace(/\n/g, '<br/>')
-           .replace(/\\n/g, ' ')
-           .replace(/\t/g, '&nbsp;&nbsp;')
+         .replace(/\\n/g, ' ')
+         .replace(/\t/g, '&nbsp;&nbsp;')
 
        hljs.highlightBlock(result);
 
