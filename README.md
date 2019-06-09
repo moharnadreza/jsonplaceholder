@@ -27,7 +27,7 @@ Let's start with resources, JSONPlaceholder provides the usual suspects:
 
 Here's some code using [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) showing what can be done with JSONPlaceholder.
 
-## Showing a resource
+### Showing a resource
 
 ```js
 fetch('https://jsonplaceholder.ir/posts/1')
@@ -35,7 +35,7 @@ fetch('https://jsonplaceholder.ir/posts/1')
   .then(json => console.log(json))
 ```
 
-## Listing resources
+### Listing resources
 
 ```js
 fetch('https://jsonplaceholder.ir/posts')
@@ -43,7 +43,7 @@ fetch('https://jsonplaceholder.ir/posts')
   .then(json => console.log(json))
 ```
 
-## Creating a resource
+### Creating a resource
 
 ```js
 // POST adds a random id to the object sent
@@ -73,7 +73,7 @@ fetch('https://jsonplaceholder.ir/posts', {
 
 Note: the resource will not be really created on the server but it will be faked as if. 
 
-## Updating a resource
+### Updating a resource
 
 ```js
 fetch('https://jsonplaceholder.ir/posts/1', {
@@ -126,7 +126,7 @@ fetch('https://jsonplaceholder.ir/posts/1', {
 
 Note: the resource will not be really updated on the server but it will be faked as if. 
 
-## Deleting a resource
+### Deleting a resource
 
 ```js
 fetch('https://jsonplaceholder.ir/posts/1', {
@@ -136,7 +136,7 @@ fetch('https://jsonplaceholder.ir/posts/1', {
 
 Note: the resource will not be really deleted on the server but it will be faked as if. 
 
-## Filtering resources
+### Filtering resources
 
 Basic filtering is supported through query parameters.
 
@@ -147,7 +147,7 @@ fetch('https://jsonplaceholder.ir/posts?userId=1')
   .then(json => console.log(json))
 ```
 
-## Nested resources
+### Nested resources
 
 One level of nested route is available.
 
@@ -168,7 +168,7 @@ Here's the list of available nested routes:
 
 
 
-## Use JSONPlaceholder with GraphQL 
+### Use JSONPlaceholder with GraphQL 
 
 All of the requests are available in https://jsonplaceholder.ir/graphql with different queries, get needed params for each one :)
 
@@ -218,5 +218,10 @@ fetch('https://jsonplaceholder.ir/graphql', {
   })
   .then(response => response.json())
   .then(json => console.log(json))
+
+
+## ToDo
+
+- Add pagination
 
 ```
