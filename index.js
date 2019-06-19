@@ -1,50 +1,42 @@
-/**
- * use env file to config
- */
+// use env file to config
 const dotenv = require('dotenv').config()
 
-/**
- * required packages
- */
+// required packages
 const jsonServer = require('json-server')
 const clone = require('clone')
-const { ApolloServer, gql } = require('apollo-server-express');
+const {
+  ApolloServer,
+  gql
+} = require('apollo-server-express');
 
-/**
- * data
- */
+// data
 const data = require('./data.json')
 
-/**
- * configs
- */
+// configs
 const port = process.env.PORT || 3000
 
-/**
- * make app
- */
+// make app
 const app = jsonServer.create()
 
-/**
- * define router
- */
-const router = jsonServer.router(clone(data), { _isFake: true })
+// define router
+const router = jsonServer.router(clone(data), {
+  _isFake: true
+})
 
+// required controllers and configs for graphql
+const typeDefs = require('./graphql/typeDefs');
+const resolvers = require('./graphql/resolvers');
 
-/**
- * required controllers and configs for graphql
- */
- const typeDefs = require('./graphql/typeDefs');
- const resolvers = require('./graphql/resolvers');
+// make apollo server
+const server = new ApolloServer({
+  typeDefs,
+  resolvers
+})
 
-/**
- * make apollo server
- */
-const server = new ApolloServer({ typeDefs, resolvers })
-/**
- * apply app to apollo server
- */
-server.applyMiddleware({ app })
+// apply app to apollo server
+server.applyMiddleware({
+  app
+})
 
 
 app.use((req, res, next) => {
@@ -59,9 +51,7 @@ app.use(jsonServer.defaults({
 
 app.use(router)
 
-/**
- * listen to port
- */
+// listen to port
 app.listen(port, () => {
   console.log(`Perisan JSONPlaceholder listening on http://localhost:${port} and graphql is running on http://localhost:${port}${server.graphqlPath}`)
 })
