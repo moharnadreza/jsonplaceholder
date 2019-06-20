@@ -1,0 +1,179 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Quicksand;
+    font-weight: bold;
+    line-height: 1.75 !important;
+
+    h1 {
+        font-size: 36px;
+        font-weight: bold;
+        color: #0C2D4E;
+        margin: 0 0 15px 0;
+    }
+
+    h3 {
+        font-size: 16px;
+        color: #0C2D4E;
+        margin: 0;
+    }
+
+    p,
+    a {
+        font-size: 12px;
+        color: #949494;
+        margin: 0;
+    }
+
+    a {
+        text-decoration: none !important;
+        transition: all 100ms ease-in-out;
+
+        &:hover {
+            color: #0C2D4E;
+        }
+    }
+}
+
+#nav {
+
+    .nav {
+        display: flex;
+        align-items: center;
+        padding: 40px 0;
+
+        .logo {
+            flex: 1;
+            user-select: none;
+
+            img {
+                width: 45px;
+            }
+        }
+
+        .links {
+
+            ul {
+                display: flex;
+                align-items: center;
+                margin: 0;
+                padding: 0;
+
+                li {
+                    list-style: none;
+                    padding-left: 25px;
+                }
+            }
+        }
+    }
+}
+
+#intro {
+    margin-top: 145px;
+
+    .intro {
+
+        .content {
+
+            .action {
+                display: flex;
+                align-items: center;
+                margin-top: 30px;
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    padding: 10px 15px;
+                    border-radius: 8px;
+                    transition: all 200ms ease-in-out;
+
+                    &:hover {
+                        transform: translateY(2px);
+                    }
+
+                    &.primary {
+                        background-color: #0C2D4E;
+                        border: 2px solid #0C2D4E;
+                        color: #FFF;
+                    }
+
+                    &.outline {
+                        margin-left: 15px;
+                        border: 2px solid #FF355B;
+                        color: #FF355B;
+                    }
+
+                    img {
+                        width: 19px;
+                        margin-right: 7px;
+                    }
+                }
+            }
+        }
+
+        .code {
+            min-height: 25vh;
+            background-image: url('./../img/topPattern.svg');
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size: contain;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .editor {
+                font-family: Ubuntu;
+                background-color: #FFF;
+                padding: 15px 25px 20px 15px;
+                border-radius: 12px;
+                margin-left: 12px;
+                box-shadow: 0 0 60px rgba(#000000, 0.05);
+
+                .controls {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 15px;
+
+                    i {
+                        width: 8px;
+                        height: 8px;
+                        border-radius: 100px;
+                        margin-left: 8px;
+
+                        &:nth-child(1) {
+                            background-color: #FE5F56;
+                            margin-left: 0;
+                        }
+
+                        &:nth-child(2) {
+                            background-color: #FFBD2D;
+                        }
+
+                        &:nth-child(3) {
+                            background-color: #25C93F;
+                        }
+                    }
+                }
+
+                p {
+                    letter-spacing: 1px;
+                    color: #0C2D4E;
+                    margin-left: 10px;
+                    font-weight: normal;
+
+                    &.first {
+                        margin-left: 0px;
+
+                        span {
+                            color: #FF355B;
+                        }
+                    }
+
+                    span {
+                        color: #2DAEFF;
+                    }
+                }
+            }
+        }
+    }
+}

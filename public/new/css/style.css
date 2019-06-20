@@ -1,0 +1,203 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Quicksand;
+  font-weight: bold;
+  line-height: 1.75 !important;
+}
+
+body h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #0C2D4E;
+  margin: 0 0 15px 0;
+}
+
+body h3 {
+  font-size: 16px;
+  color: #0C2D4E;
+  margin: 0;
+}
+
+body p,
+body a {
+  font-size: 12px;
+  color: #949494;
+  margin: 0;
+}
+
+body a {
+  text-decoration: none !important;
+  -webkit-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
+}
+
+body a:hover {
+  color: #0C2D4E;
+}
+
+#nav .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px 0;
+}
+
+#nav .nav .logo {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#nav .nav .logo img {
+  width: 45px;
+}
+
+#nav .nav .links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+#nav .nav .links ul li {
+  list-style: none;
+  padding-left: 25px;
+}
+
+#intro {
+  margin-top: 145px;
+}
+
+#intro .intro .content .action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+}
+
+#intro .intro .content .action a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 15px;
+  border-radius: 8px;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+#intro .intro .content .action a:hover {
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+
+#intro .intro .content .action a.primary {
+  background-color: #0C2D4E;
+  border: 2px solid #0C2D4E;
+  color: #FFF;
+}
+
+#intro .intro .content .action a.outline {
+  margin-left: 15px;
+  border: 2px solid #FF355B;
+  color: #FF355B;
+}
+
+#intro .intro .content .action a img {
+  width: 19px;
+  margin-right: 7px;
+}
+
+#intro .intro .code {
+  min-height: 25vh;
+  background-image: url("./../img/topPattern.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#intro .intro .code .editor {
+  font-family: Ubuntu;
+  background-color: #FFF;
+  padding: 15px 25px 20px 15px;
+  border-radius: 12px;
+  margin-left: 12px;
+  -webkit-box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
+}
+
+#intro .intro .code .editor .controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+}
+
+#intro .intro .code .editor .controls i {
+  width: 8px;
+  height: 8px;
+  border-radius: 100px;
+  margin-left: 8px;
+}
+
+#intro .intro .code .editor .controls i:nth-child(1) {
+  background-color: #FE5F56;
+  margin-left: 0;
+}
+
+#intro .intro .code .editor .controls i:nth-child(2) {
+  background-color: #FFBD2D;
+}
+
+#intro .intro .code .editor .controls i:nth-child(3) {
+  background-color: #25C93F;
+}
+
+#intro .intro .code .editor p {
+  letter-spacing: 1px;
+  color: #0C2D4E;
+  margin-left: 10px;
+  font-weight: normal;
+}
+
+#intro .intro .code .editor p.first {
+  margin-left: 0px;
+}
+
+#intro .intro .code .editor p.first span {
+  color: #FF355B;
+}
+
+#intro .intro .code .editor p span {
+  color: #2DAEFF;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,15 @@
+<svg id="message-circle-outline" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="107.406" height="107.406" viewBox="0 0 107.406 107.406">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.945" y1="-0.177" x2="0.102" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffb199"/>
+      <stop offset="1" stop-color="#ff0844"/>
+    </linearGradient>
+  </defs>
+  <g id="message-circle">
+    <ellipse id="Ellipse_3" data-name="Ellipse 3" cx="4.475" cy="4.475" rx="4.475" ry="4.475" transform="translate(49.228 49.228)" fill="url(#linear-gradient)"/>
+    <ellipse id="Ellipse_4" data-name="Ellipse 4" cx="4.475" cy="4.475" rx="4.475" ry="4.475" transform="translate(67.129 49.228)" fill="url(#linear-gradient)"/>
+    <ellipse id="Ellipse_5" data-name="Ellipse 5" cx="4.475" cy="4.475" rx="4.475" ry="4.475" transform="translate(31.327 49.228)" fill="url(#linear-gradient)"/>
+    <path id="Path_12" data-name="Path 12" d="M78.48,15.189A44.753,44.753,0,0,0,5.623,64.417a4.744,4.744,0,0,1,.4,2.864L2.087,86.212a4.447,4.447,0,0,0,4.475,5.37h.9l19.154-3.849a5.639,5.639,0,0,1,2.864.4A44.753,44.753,0,0,0,78.7,15.279ZM82.194,52.6a35.8,35.8,0,0,1-49.228,27.21,14.589,14.589,0,0,0-5.594-1.164,15.352,15.352,0,0,0-2.506.224l-12.62,2.551L14.8,68.8a13.829,13.829,0,0,0-.94-8.1,35.808,35.808,0,1,1,68.337-8.1Z" transform="translate(6.863 6.874)" fill="url(#linear-gradient)"/>
+    <rect id="Rectangle_3" data-name="Rectangle 3" width="107.406" height="107.406" opacity="0" fill="url(#linear-gradient)"/>
+  </g>
+</svg>
