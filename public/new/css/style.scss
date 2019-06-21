@@ -222,3 +222,37 @@ body {
         }
     }
 }
+
+#resources {
+    margin-top: 145px;
+
+    .resources {
+
+        .title {
+
+            h3 {
+                margin-bottom: 10px;
+            }
+        }
+
+        .card {
+            border: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            img {
+                width: 65px;
+                margin-bottom: 15px;
+            }
+
+            h5 {
+                margin-bottom: 7px;
+            }
+
+            p {
+                font-size: 11px;
+            }
+        }
+    }
+}
