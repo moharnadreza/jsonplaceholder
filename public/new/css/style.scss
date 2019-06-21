@@ -1,17 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:700|Ubuntu:400&display=swap');
+
 $responsive: 767px;
 
 @mixin responsive {
     @media (max-width: #{$responsive}) {
         @content;
     }
-}
-
-;
+};
 
 body {
     margin: 0;
     padding: 0;
-    font-family: Quicksand;
+    font-family: 'Quicksand', sans-serif;
     font-weight: bold;
     line-height: 1.75 !important;
 
@@ -363,7 +363,7 @@ body {
                     font-weight: normal;
 
                     code {
-                        font-family: Ubuntu;
+                        font-family: 'Ubuntu', sans-serif;
                         font-size: 12px;
 
                         @include responsive {
