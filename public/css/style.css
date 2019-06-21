@@ -403,7 +403,7 @@ p.intro {
     display: flex;
     justify-content: center;
     box-shadow: 0 5px 140px -25px rgba(23, 35, 57, 0.4);
-    animation: bounce 3s ease-in-out infinite
+    animation: bounce 3s ease-in-out infinite;
 }
 
 .case .circle.one {

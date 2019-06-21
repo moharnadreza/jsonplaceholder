@@ -1,3 +1,13 @@
+$responsive: 767px;
+
+@mixin responsive {
+    @media (max-width: #{$responsive}) {
+        @content;
+    }
+}
+
+;
+
 body {
     margin: 0;
     padding: 0;
@@ -10,6 +20,10 @@ body {
         font-weight: bold;
         color: #0C2D4E;
         margin: 0 0 15px 0;
+
+        @include responsive {
+            font-size: 28px;
+        }
     }
 
     h3 {
@@ -17,6 +31,10 @@ body {
         font-weight: bold;
         color: #0C2D4E;
         margin: 0;
+
+        @include responsive {
+            font-size: 14px;
+        }
     }
 
     h5 {
@@ -24,6 +42,10 @@ body {
         font-weight: bold;
         color: #0C2D4E;
         margin: 0;
+
+        @include responsive {
+            font-size: 11px;
+        }
     }
 
     p,
@@ -31,6 +53,10 @@ body {
         font-size: 12px;
         color: #949494;
         margin: 0;
+
+        @include responsive {
+            font-size: 11px;
+        }
     }
 
     a {
@@ -72,6 +98,141 @@ body {
                     padding-left: 25px;
                 }
             }
+
+            @include responsive {
+                width: 100%;
+                height: 100%;
+                position: fixed;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background-color: #FFF;
+                z-index: 10;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                opacity: 0;
+                visibility: hidden;
+                transition: opacity 200ms, visibility 250ms;
+
+                &.show {
+                    visibility: visible;
+                    opacity: 1;
+
+                    ul {
+    
+                        li {
+                            opacity: 0;
+                            transform: translateX(10px);
+                            animation: fadeInRight 250ms ease-in-out forwards;
+                            animation-delay: 250ms;
+    
+    
+                            &:nth-of-type(2) {
+                                animation-delay: 280ms;
+                            }
+    
+                            &:nth-of-type(3) {
+                                animation-delay: 310ms;
+                            }
+    
+                            &:nth-of-type(4) {
+                                animation-delay: 340ms;
+                            }
+                        }
+    
+                        @keyframes fadeInRight {
+                            0% {
+                                opacity: 0;
+                                transform: translateX(10px);
+                            }
+    
+                            100% {
+                                opacity: 1;
+                                transform: translateX(0);
+                            }
+                        }
+                    }
+                }
+
+                ul {
+                    flex-direction: column;
+
+                    li {
+                        padding: 0;
+                        margin: 15px 0;
+
+                        &:last-child {
+
+                            a {
+                                color: #FF355B;
+
+                                &:hover {
+                                    color: #FF355B;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .toggle {
+            cursor: pointer;
+            width: 15px;
+            height: 15px;
+            text-align: right;
+            display: none;
+            position: relative;
+            z-index: 20;
+
+            @include responsive {
+                display: block;
+            }
+
+            i {
+                height: 2px;
+                width: 15px;
+                display: block;
+                position: absolute;
+                right: 0;
+                top: 5px;
+                border-radius: 100px;
+                background-color: #0C2D4E;
+                transition: 0.3s cubic-bezier(.73, 0, .23, 1);
+
+                &:last-child {
+                    width: 10px;
+                    top: 11px;
+                }
+            }
+
+            &:hover {
+
+                i {
+                    width: 10px;
+
+                    &:last-child {
+                        width: 15px;
+                    }
+                }
+            }
+
+            &.active {
+
+                i {
+                    width: 15px;
+                    transform: rotate(45deg);
+                    top: 7px;
+
+                    &:last-child {
+                        width: 15px;
+                        transform: rotate(-45deg);
+                        top: 7px;
+                    }
+                }
+            }
         }
     }
 }
@@ -79,14 +240,33 @@ body {
 #hero {
     margin-top: 145px;
 
+    @include responsive {
+        margin-top: 30px;
+    }
+
     .hero {
 
+        .content-sec {
+
+            @include responsive {
+                order: 2;
+            }
+        }
+
         .content {
+
+            @include responsive {
+                margin-top: 50px;
+            }
 
             .action {
                 display: flex;
                 align-items: center;
                 margin-top: 30px;
+
+                @include responsive {
+                    margin-top: 20px;
+                }
 
                 a {
                     display: flex;
@@ -94,9 +274,18 @@ body {
                     padding: 10px 15px;
                     border-radius: 8px;
                     transition: all 200ms ease-in-out;
+                    user-select: none;
+
+                    @include responsive {
+                        padding: 10px 10px;
+                    }
 
                     &:hover {
                         transform: translateY(2px);
+
+                        @include responsive {
+                            transform: none;
+                        }
                     }
 
                     &.primary {
@@ -134,7 +323,12 @@ body {
                 padding: 15px 25px 20px 15px;
                 border-radius: 12px;
                 margin-left: 10px;
-                box-shadow: 0 0 60px rgba(#000000, 0.05);
+                box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
+
+                @include responsive {
+                    width: 100%;
+                    margin: 0;
+                }
 
                 .controls {
                     display: flex;
@@ -171,6 +365,10 @@ body {
                     code {
                         font-family: Ubuntu;
                         font-size: 12px;
+
+                        @include responsive {
+                            font-size: 11px;
+                        }
                     }
 
                     span {
@@ -189,6 +387,10 @@ body {
 #intro {
     margin-top: 145px;
 
+    @include responsive {
+        margin-top: 80px;
+    }
+
     .intro {
         text-align: center;
 
@@ -196,6 +398,11 @@ body {
             max-width: 60%;
             margin: 0 auto 50px;
 
+            @include responsive {
+                max-width: 100%;
+                margin: 0 0 30px 0;
+            }
+
             h3 {
                 margin-bottom: 10px;
             }
@@ -206,6 +413,10 @@ body {
             display: flex;
             flex-direction: column;
             align-items: center;
+
+            @include responsive {
+                margin: 20px 0 40px 0;
+            }
 
             img {
                 width: 65px;
@@ -218,6 +429,10 @@ body {
 
             p {
                 font-size: 11px;
+
+                @include responsive {
+                    font-size: 10px;
+                }
             }
         }
     }
@@ -225,34 +440,220 @@ body {
 
 #resources {
     margin-top: 145px;
+    margin-bottom: 100px;
+
+    @include responsive {
+        margin-top: 80px;
+        margin-bottom: 0;
+    }
 
     .resources {
 
         .title {
+            margin-bottom: 30px;
 
             h3 {
                 margin-bottom: 10px;
             }
         }
 
-        .card {
-            border: none;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+        .sources {
+            padding: 0;
+            margin: 0;
 
-            img {
-                width: 65px;
-                margin-bottom: 15px;
+            @include responsive {
+                padding: 0 15px;
             }
 
-            h5 {
-                margin-bottom: 7px;
+            li {
+                list-style: none;
+                border-bottom: 1px dashed #CBCBCB;
+
+                .item {
+                    display: flex;
+                    align-items: center;
+                    padding: 10px;
+
+                    img {
+                        width: 25px;
+                        align-self: flex-start;
+                    }
+
+                    .content {
+                        margin-left: 10px;
+
+                        p {
+                            color: #0C2D4E;
+                            margin-bottom: 3px;
+                            transition: all 100ms ease-in-out;
+                        }
+
+                        span {
+                            font-size: 11px;
+                            color: #949494;
+                            transition: all 100ms ease-in-out;
+                        }
+                    }
+
+                    &:hover {
+
+                        .content {
+
+                            p {
+                                color: #FF355B;
+                            }
+
+                            span {
+                                color: #0C2D4E;
+                            }
+                        }
+                    }
+                }
+
+                &:last-child {
+                    border-bottom: none;
+                }
+            }
+        }
+
+        .bg {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            background-image: url('./../img/bottomPattern.svg');
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size: contain;
+
+            @include responsive {
+                display: none;
             }
 
-            p {
-                font-size: 11px;
+            .circle {
+                width: 70px;
+                height: 70px;
+                position: absolute;
+                background: #FFF;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                box-shadow: 0 0 60px rgba(0, 0, 0, 0.03);
+                animation: bounce 3s ease-in-out infinite;
+
+                img {
+                    width: 20px;
+                    user-select: none;
+                }
+
+                &.one {
+                    top: 20%;
+                    left: 20%;
+                    animation-delay: 1s;
+                }
+
+                &.two {
+                    top: 55%;
+                    left: 24%;
+                    animation-delay: 1.7s;
+                }
+
+                &.three {
+                    top: 40%;
+                    left: 55%;
+                    animation-delay: 2s;
+                }
+
+                &.four {
+                    top: 80%;
+                    left: 75%;
+                    animation-delay: 1.2s;
+                }
+
+                &.five {
+                    top: 5%;
+                    left: 85%;
+                    animation-delay: 1.5s;
+                }
             }
+        }
+
+        @keyframes bounce {
+            0% {
+                transform: translateY(0)
+            }
+
+            50% {
+                transform: translateY(15px)
+            }
+
+            100% {
+                transform: translateY(0)
+            }
+        }
+    }
+}
+
+footer {
+    padding: 60px 0;
+    background-color: transparent;
+    text-align: center;
+    line-height: 1.75;
+
+    p {
+        display: flex;
+        align-self: center;
+        justify-content: center;
+
+        @include responsive {
+            display: block;
+        }
+    }
+
+    i {
+        width: 4px;
+        height: 4px;
+        background-color: #0C2D4E;
+        border-radius: 100px;
+        align-self: center;
+        margin: 0 7px;
+
+        @include responsive {
+            display: block;
+            margin: auto;
+            width: 0;
+            height: 0;
+            opacity: 0;
+        }
+    }
+
+    span {
+
+        a {
+            color: #FF355B;
+            margin: 0;
+
+            &:hover {
+                color: #FF355B;
+            }
+        }
+    }
+
+    img {
+        width: 12px;
+        height: 12px;
+        margin: 0 5px;
+        align-self: center;
+
+        @include responsive {
+            margin: 0 2px;
+        }
+    }
+
+    a {
+        margin-left: 5px;
+
+        @include responsive {
+            margin-left: 2px;
         }
     }
 }
