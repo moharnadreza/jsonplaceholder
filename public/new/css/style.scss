@@ -421,6 +421,10 @@ body {
             img {
                 width: 65px;
                 margin-bottom: 15px;
+
+                @include responsive {
+                    width: 50px;
+                }
             }
 
             h5 {
