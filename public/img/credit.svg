@@ -1,8 +1,0 @@
-<svg id="credit-card-outline" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-  <g id="credit-card">
-    <rect id="Rectangle_13" data-name="Rectangle 13" width="24" height="24" fill="#00e9a2" opacity="0"/>
-    <path id="Path_28" data-name="Path 28" d="M19,5H5A3,3,0,0,0,2,8v8a3,3,0,0,0,3,3H19a3,3,0,0,0,3-3V8A3,3,0,0,0,19,5ZM4,8A1,1,0,0,1,5,7H19a1,1,0,0,1,1,1V9H4Zm16,8a1,1,0,0,1-1,1H5a1,1,0,0,1-1-1V11H20Z" fill="#00e9a2"/>
-    <path id="Path_29" data-name="Path 29" d="M7,15h4a1,1,0,0,0,0-2H7a1,1,0,0,0,0,2Z" fill="#00e9a2"/>
-    <path id="Path_30" data-name="Path 30" d="M15,15h2a1,1,0,0,0,0-2H15a1,1,0,0,0,0,2Z" fill="#00e9a2"/>
-  </g>
-</svg>
