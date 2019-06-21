@@ -15,6 +15,14 @@ body h1 {
 
 body h3 {
   font-size: 16px;
+  font-weight: bold;
+  color: #0C2D4E;
+  margin: 0;
+}
+
+body h5 {
+  font-size: 12px;
+  font-weight: bold;
   color: #0C2D4E;
   margin: 0;
 }
@@ -76,24 +84,11 @@ body a:hover {
   padding-left: 25px;
 }
 
-#intro .container {
-  background-image: url("./../img/topPattern.svg");
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: contain;
+#hero {
+  margin-top: 145px;
 }
 
-#intro .intro {
-  height: 40vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-
-#intro .intro .content .action {
+#hero .hero .content .action {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -103,7 +98,7 @@ body a:hover {
   margin-top: 30px;
 }
 
-#intro .intro .content .action a {
+#hero .hero .content .action a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -116,30 +111,34 @@ body a:hover {
   transition: all 200ms ease-in-out;
 }
 
-#intro .intro .content .action a:hover {
+#hero .hero .content .action a:hover {
   -webkit-transform: translateY(2px);
           transform: translateY(2px);
 }
 
-#intro .intro .content .action a.primary {
+#hero .hero .content .action a.primary {
   background-color: #0C2D4E;
   border: 2px solid #0C2D4E;
   color: #FFF;
 }
 
-#intro .intro .content .action a.outline {
+#hero .hero .content .action a.outline {
   margin-left: 15px;
   border: 2px solid #FF355B;
   color: #FF355B;
 }
 
-#intro .intro .content .action a img {
+#hero .hero .content .action a img {
   width: 19px;
   margin-right: 7px;
 }
 
-#intro .intro .code {
-  min-height: 100%;
+#hero .hero .code {
+  min-height: 25vh;
+  background-image: url("./../img/topPattern.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -151,17 +150,16 @@ body a:hover {
           justify-content: center;
 }
 
-#intro .intro .code .editor {
-  font-family: Ubuntu;
+#hero .hero .code .editor {
   background-color: #FFF;
   padding: 15px 25px 20px 15px;
   border-radius: 12px;
-  margin-left: 50px;
+  margin-left: 10px;
   -webkit-box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
           box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
 }
 
-#intro .intro .code .editor .controls {
+#hero .hero .code .editor .controls {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -171,42 +169,87 @@ body a:hover {
   margin-bottom: 15px;
 }
 
-#intro .intro .code .editor .controls i {
+#hero .hero .code .editor .controls i {
   width: 8px;
   height: 8px;
   border-radius: 100px;
   margin-left: 8px;
 }
 
-#intro .intro .code .editor .controls i:nth-child(1) {
+#hero .hero .code .editor .controls i:nth-child(1) {
   background-color: #FE5F56;
   margin-left: 0;
 }
 
-#intro .intro .code .editor .controls i:nth-child(2) {
+#hero .hero .code .editor .controls i:nth-child(2) {
   background-color: #FFBD2D;
 }
 
-#intro .intro .code .editor .controls i:nth-child(3) {
+#hero .hero .code .editor .controls i:nth-child(3) {
   background-color: #25C93F;
 }
 
-#intro .intro .code .editor p {
+#hero .hero .code .editor pre {
   letter-spacing: 1px;
   color: #0C2D4E;
-  margin-left: 10px;
+  margin: 0;
   font-weight: normal;
 }
 
-#intro .intro .code .editor p.first {
-  margin-left: 0px;
+#hero .hero .code .editor pre code {
+  font-family: Ubuntu;
+  font-size: 12px;
 }
 
-#intro .intro .code .editor p.first span {
+#hero .hero .code .editor pre span {
+  color: #2DAEFF;
+}
+
+#hero .hero .code .editor pre span.first {
   color: #FF355B;
 }
 
-#intro .intro .code .editor p span {
-  color: #2DAEFF;
+#intro {
+  margin-top: 145px;
+}
+
+#intro .intro {
+  text-align: center;
+}
+
+#intro .intro .title {
+  max-width: 60%;
+  margin: 0 auto 50px;
+}
+
+#intro .intro .title h3 {
+  margin-bottom: 10px;
+}
+
+#intro .intro .card {
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#intro .intro .card img {
+  width: 65px;
+  margin-bottom: 15px;
+}
+
+#intro .intro .card h5 {
+  margin-bottom: 7px;
+}
+
+#intro .intro .card p {
+  font-size: 11px;
 }
 /*# sourceMappingURL=style.css.map */

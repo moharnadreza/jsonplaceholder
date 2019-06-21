@@ -14,7 +14,7 @@
     <section id="nav">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-xl-8 col-lg-10 col-md-12 col-sm-12 col-12">
+                <div class="col-xl-8 col-lg-8 col-md-10 col-sm-12 col-12">
                     <div class="nav">
                         <div class="logo">
                             <a href="">
@@ -41,11 +41,11 @@
         </div>
     </section>
 
-    <section id="intro">
+    <section id="hero">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-xl-8 col-lg-10 col-md-12 col-sm-12 col-12">
-                    <div class="intro">
+                <div class="col-xl-8 col-lg-8 col-md-10 col-sm-12 col-12">
+                    <div class="hero">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="content">
@@ -73,9 +73,9 @@
                                             <i></i>
                                             <i></i>
                                         </div>
-                                        <p class="first">fetch(‘<span>https://jsonplaceholder.ir/todos/1</span>’)</p>
-                                        <p>.then(response => response.json())</p>
-                                        <p>.then(json => <span>console</span>.log(json))</p>
+                                        <pre><code>fetch('<span class="first">https://jsonplaceholder.ir/todos/1</span>')
+    .then(response => response.json())
+    .then(json => <span>console</span>.log(json))</code></pre>
                                     </div>
                                 </div>
                             </div>
@@ -84,6 +84,45 @@
                 </div>
             </div>
         </div>
+    </section>
+
+    <section id="intro">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8 col-lg-8 col-md-10 col-sm-12 col-12">
+                    <div class="intro">
+                        <div class="title">
+                            <h3>Introduction</h3>
+                            <p>This is a free online REST API that returns Persian data (RTL data). You can use whenever you need some fake data.</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="./img/http.svg" alt="">
+                                    <h5>HTTP methods</h5>
+                                    <p>HTTP methods, Include GET, POST, PUT, PATCH and DELETE</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="./img/fa.svg" alt="">
+                                    <h5>Persian data</h5>
+                                    <p>Returns Persian (Right to Left) fake data as JSON file format</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="./img/http.svg" alt="">
+                                    <h5>With love</h5>
+                                    <p>It’s free and made with love for Iranian developers</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </section>
 
 </body>
