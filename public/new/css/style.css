@@ -418,6 +418,7 @@ body a:hover {
   color: #0C2D4E;
   margin: 0;
   font-weight: normal;
+  overflow: hidden;
 }
 
 #hero .hero .code .editor pre code {
@@ -492,6 +493,12 @@ body a:hover {
 #intro .intro .card img {
   width: 65px;
   margin-bottom: 15px;
+}
+
+@media (max-width: 767px) {
+  #intro .intro .card img {
+    width: 50px;
+  }
 }
 
 #intro .intro .card h5 {
