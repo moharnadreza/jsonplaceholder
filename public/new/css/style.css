@@ -76,8 +76,21 @@ body a:hover {
   padding-left: 25px;
 }
 
-#intro {
-  margin-top: 145px;
+#intro .container {
+  background-image: url("./../img/topPattern.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+
+#intro .intro {
+  height: 40vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 #intro .intro .content .action {
@@ -126,11 +139,7 @@ body a:hover {
 }
 
 #intro .intro .code {
-  min-height: 25vh;
-  background-image: url("./../img/topPattern.svg");
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: contain;
+  min-height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -147,7 +156,7 @@ body a:hover {
   background-color: #FFF;
   padding: 15px 25px 20px 15px;
   border-radius: 12px;
-  margin-left: 12px;
+  margin-left: 50px;
   -webkit-box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
           box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
 }

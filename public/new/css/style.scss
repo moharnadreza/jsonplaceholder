@@ -69,9 +69,20 @@ body {
 }
 
 #intro {
-    margin-top: 145px;
+    // margin-top: 145px;
+
+    .container {
+        background-image: url('./../img/topPattern.svg');
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: contain;
+        
+    }
 
     .intro {
+        height: 40vh;
+        display: flex;
+        align-items: flex-end;
 
         .content {
 
@@ -112,11 +123,7 @@ body {
         }
 
         .code {
-            min-height: 25vh;
-            background-image: url('./../img/topPattern.svg');
-            background-repeat: no-repeat;
-            background-position: right;
-            background-size: contain;
+            min-height: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -126,7 +133,7 @@ body {
                 background-color: #FFF;
                 padding: 15px 25px 20px 15px;
                 border-radius: 12px;
-                margin-left: 12px;
+                margin-left: 50px;
                 box-shadow: 0 0 60px rgba(#000000, 0.05);
 
                 .controls {
