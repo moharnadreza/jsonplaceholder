@@ -2,10 +2,25 @@
 
 $responsive: 767px;
 
+// mixin for small size
+
 @mixin responsive {
     @media (max-width: #{$responsive}) {
         @content;
     }
+};
+
+$color: (
+    black: #0C2D4E,
+    gray: #949494,
+    white: #FFFFFF,
+    red: #FF355B
+);
+
+// function for colors
+
+@function color($color-name) {
+    @return map-get($color, $color-name)
 };
 
 body {
@@ -14,11 +29,13 @@ body {
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
     line-height: 1.75 !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
 
     h1 {
         font-size: 36px;
         font-weight: bold;
-        color: #0C2D4E;
+        color: color(black);
         margin: 0 0 15px 0;
 
         @include responsive {
@@ -29,7 +46,7 @@ body {
     h3 {
         font-size: 16px;
         font-weight: bold;
-        color: #0C2D4E;
+        color: color(black);
         margin: 0;
 
         @include responsive {
@@ -40,7 +57,7 @@ body {
     h5 {
         font-size: 12px;
         font-weight: bold;
-        color: #0C2D4E;
+        color: color(black);
         margin: 0;
 
         @include responsive {
@@ -51,7 +68,7 @@ body {
     p,
     a {
         font-size: 12px;
-        color: #949494;
+        color: color(gray);
         margin: 0;
 
         @include responsive {
@@ -64,7 +81,7 @@ body {
         transition: all 100ms ease-in-out;
 
         &:hover {
-            color: #0C2D4E;
+            color: color(black);
         }
     }
 }
@@ -107,7 +124,7 @@ body {
                 right: 0;
                 bottom: 0;
                 left: 0;
-                background-color: #FFF;
+                background-color: color(white);
                 z-index: 10;
                 display: flex;
                 justify-content: center;
@@ -166,10 +183,10 @@ body {
                         &:last-child {
 
                             a {
-                                color: #FF355B;
+                                color: color(red);
 
                                 &:hover {
-                                    color: #FF355B;
+                                    color: color(red);
                                 }
                             }
                         }
@@ -199,7 +216,7 @@ body {
                 right: 0;
                 top: 5px;
                 border-radius: 100px;
-                background-color: #0C2D4E;
+                background-color: color(black);
                 transition: 0.3s cubic-bezier(.73, 0, .23, 1);
 
                 &:last-child {
@@ -241,7 +258,7 @@ body {
     margin-top: 145px;
 
     @include responsive {
-        margin-top: 30px;
+        margin-top: 0;
     }
 
     .hero {
@@ -256,7 +273,7 @@ body {
         .content {
 
             @include responsive {
-                margin-top: 50px;
+                margin-top: 20px;
             }
 
             .action {
@@ -289,15 +306,15 @@ body {
                     }
 
                     &.primary {
-                        background-color: #0C2D4E;
-                        border: 2px solid #0C2D4E;
-                        color: #FFF;
+                        background-color: color(black);
+                        border: 2px solid color(black);
+                        color: color(white);
                     }
 
                     &.outline {
                         margin-left: 15px;
-                        border: 2px solid #FF355B;
-                        color: #FF355B;
+                        border: 2px solid color(red);
+                        color: color(red);
                     }
 
                     img {
@@ -318,8 +335,12 @@ body {
             align-items: center;
             justify-content: center;
 
+            @include responsive {
+                min-height: 40vh;
+            }
+
             .editor {
-                background-color: #FFF;
+                background-color: color(white);
                 padding: 15px 25px 20px 15px;
                 border-radius: 12px;
                 margin-left: 10px;
@@ -357,14 +378,13 @@ body {
                 }
 
                 pre {
-                    letter-spacing: 1px;
-                    color: #0C2D4E;
+                    color: color(black);
                     margin: 0;
-                    font-weight: normal;
 
                     code {
                         font-family: 'Ubuntu', sans-serif;
                         font-size: 12px;
+                        letter-spacing: 1.5px;
 
                         @include responsive {
                             font-size: 11px;
@@ -375,7 +395,7 @@ body {
                         color: #2DAEFF;
 
                         &.first {
-                            color: #FF355B;
+                            color: color(red);
                         }
                     }
                 }
@@ -471,7 +491,7 @@ body {
 
             li {
                 list-style: none;
-                border-bottom: 1px dashed #CBCBCB;
+                border-bottom: 1px dashed rgba(color(gray), 0.4);
 
                 .item {
                     display: flex;
@@ -487,14 +507,14 @@ body {
                         margin-left: 10px;
 
                         p {
-                            color: #0C2D4E;
+                            color: color(black);
                             margin-bottom: 3px;
                             transition: all 100ms ease-in-out;
                         }
 
                         span {
                             font-size: 11px;
-                            color: #949494;
+                            color: color(gray);
                             transition: all 100ms ease-in-out;
                         }
                     }
@@ -504,11 +524,11 @@ body {
                         .content {
 
                             p {
-                                color: #FF355B;
+                                color: color(red);
                             }
 
                             span {
-                                color: #0C2D4E;
+                                color: color(black);
                             }
                         }
                     }
@@ -537,7 +557,7 @@ body {
                 width: 70px;
                 height: 70px;
                 position: absolute;
-                background: #FFF;
+                background: color(white);
                 border-radius: 50%;
                 display: flex;
                 justify-content: center;
@@ -610,13 +630,14 @@ footer {
 
         @include responsive {
             display: block;
+            margin-bottom: 10px;
         }
     }
 
     i {
         width: 4px;
         height: 4px;
-        background-color: #0C2D4E;
+        background-color: color(black);
         border-radius: 100px;
         align-self: center;
         margin: 0 7px;
@@ -632,12 +653,17 @@ footer {
 
     span {
 
+        @include responsive {
+            margin-top: 10px;
+            display: block;
+        }
+
         a {
-            color: #FF355B;
+            color: color(red);
             margin: 0;
 
             &:hover {
-                color: #FF355B;
+                color: color(red);
             }
         }
     }

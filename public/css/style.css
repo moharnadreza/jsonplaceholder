@@ -5,6 +5,8 @@ body {
   font-family: 'Quicksand', sans-serif;
   font-weight: bold;
   line-height: 1.75 !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
 }
 
 body h1 {
@@ -119,7 +121,7 @@ body a:hover {
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: #FFF;
+    background-color: #FFFFFF;
     z-index: 10;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -264,7 +266,7 @@ body a:hover {
 
 @media (max-width: 767px) {
   #hero {
-    margin-top: 30px;
+    margin-top: 0;
   }
 }
 
@@ -278,7 +280,7 @@ body a:hover {
 
 @media (max-width: 767px) {
   #hero .hero .content {
-    margin-top: 50px;
+    margin-top: 20px;
   }
 }
 
@@ -336,7 +338,7 @@ body a:hover {
 #hero .hero .content .action a.primary {
   background-color: #0C2D4E;
   border: 2px solid #0C2D4E;
-  color: #FFF;
+  color: #FFFFFF;
 }
 
 #hero .hero .content .action a.outline {
@@ -367,8 +369,14 @@ body a:hover {
           justify-content: center;
 }
 
+@media (max-width: 767px) {
+  #hero .hero .code {
+    min-height: 40vh;
+  }
+}
+
 #hero .hero .code .editor {
-  background-color: #FFF;
+  background-color: #FFFFFF;
   padding: 15px 25px 20px 15px;
   border-radius: 12px;
   margin-left: 10px;
@@ -414,15 +422,14 @@ body a:hover {
 }
 
 #hero .hero .code .editor pre {
-  letter-spacing: 1px;
   color: #0C2D4E;
   margin: 0;
-  font-weight: normal;
 }
 
 #hero .hero .code .editor pre code {
   font-family: 'Ubuntu', sans-serif;
   font-size: 12px;
+  letter-spacing: 1.5px;
 }
 
 @media (max-width: 767px) {
@@ -494,6 +501,12 @@ body a:hover {
   margin-bottom: 15px;
 }
 
+@media (max-width: 767px) {
+  #intro .intro .card img {
+    width: 50px;
+  }
+}
+
 #intro .intro .card h5 {
   margin-bottom: 7px;
 }
@@ -541,7 +554,7 @@ body a:hover {
 
 #resources .resources .sources li {
   list-style: none;
-  border-bottom: 1px dashed #CBCBCB;
+  border-bottom: 1px dashed rgba(148, 148, 148, 0.4);
 }
 
 #resources .resources .sources li .item {
@@ -610,7 +623,7 @@ body a:hover {
   width: 70px;
   height: 70px;
   position: absolute;
-  background: #FFF;
+  background: #FFFFFF;
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -718,6 +731,7 @@ footer p {
 @media (max-width: 767px) {
   footer p {
     display: block;
+    margin-bottom: 10px;
   }
 }
 
@@ -739,6 +753,13 @@ footer i {
     width: 0;
     height: 0;
     opacity: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  footer span {
+    margin-top: 10px;
+    display: block;
   }
 }
 

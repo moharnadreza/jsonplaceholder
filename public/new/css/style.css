@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Quicksand:700|Ubuntu:400&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Quicksand:700|Ubuntu:500&display=swap");
 body {
   margin: 0;
   padding: 0;
@@ -417,7 +417,6 @@ body a:hover {
   letter-spacing: 1px;
   color: #0C2D4E;
   margin: 0;
-  font-weight: normal;
   overflow: hidden;
 }
 
