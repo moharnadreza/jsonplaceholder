@@ -143,10 +143,10 @@ body a:hover {
   }
   #nav .nav .links.show ul li {
     opacity: 0;
-    -webkit-transform: translateX(10px);
-            transform: translateX(10px);
-    -webkit-animation: fadeInRight 250ms ease-in-out forwards;
-            animation: fadeInRight 250ms ease-in-out forwards;
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+    -webkit-animation: scale 250ms ease-in-out forwards;
+            animation: scale 250ms ease-in-out forwards;
     -webkit-animation-delay: 250ms;
             animation-delay: 250ms;
   }
@@ -162,28 +162,28 @@ body a:hover {
     -webkit-animation-delay: 340ms;
             animation-delay: 340ms;
   }
-  @-webkit-keyframes fadeInRight {
+  @-webkit-keyframes scale {
     0% {
       opacity: 0;
-      -webkit-transform: translateX(10px);
-              transform: translateX(10px);
+      -webkit-transform: scale(0.95);
+              transform: scale(0.95);
     }
     100% {
       opacity: 1;
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
+      -webkit-transform: scale(1);
+              transform: scale(1);
     }
   }
-  @keyframes fadeInRight {
+  @keyframes scale {
     0% {
       opacity: 0;
-      -webkit-transform: translateX(10px);
-              transform: translateX(10px);
+      -webkit-transform: scale(0.95);
+              transform: scale(0.95);
     }
     100% {
       opacity: 1;
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
+      -webkit-transform: scale(1);
+              transform: scale(1);
     }
   }
   #nav .nav .links ul {
@@ -195,6 +195,9 @@ body a:hover {
   #nav .nav .links ul li {
     padding: 0;
     margin: 15px 0;
+  }
+  #nav .nav .links ul li a {
+    font-size: 12px;
   }
   #nav .nav .links ul li:last-child a {
     color: #FF355B;
@@ -343,8 +346,15 @@ body a:hover {
 
 #hero .hero .content .action a.outline {
   margin-left: 15px;
+  background-color: #FF355B;
   border: 2px solid #FF355B;
-  color: #FF355B;
+  color: #FFFFFF;
+}
+
+@media (max-width: 767px) {
+  #hero .hero .content .action a.outline {
+    margin-left: 10px;
+  }
 }
 
 #hero .hero .content .action a img {

@@ -141,8 +141,8 @@ body {
     
                         li {
                             opacity: 0;
-                            transform: translateX(10px);
-                            animation: fadeInRight 250ms ease-in-out forwards;
+                            transform: scale(0.95);
+                            animation: scale 250ms ease-in-out forwards;
                             animation-delay: 250ms;
     
     
@@ -159,15 +159,15 @@ body {
                             }
                         }
     
-                        @keyframes fadeInRight {
+                        @keyframes scale {
                             0% {
                                 opacity: 0;
-                                transform: translateX(10px);
+                                transform: scale(0.95);
                             }
     
                             100% {
                                 opacity: 1;
-                                transform: translateX(0);
+                                transform: scale(1);
                             }
                         }
                     }
@@ -179,6 +179,10 @@ body {
                     li {
                         padding: 0;
                         margin: 15px 0;
+
+                        a {
+                            font-size: 12px;
+                        }
 
                         &:last-child {
 
@@ -313,8 +317,13 @@ body {
 
                     &.outline {
                         margin-left: 15px;
+                        background-color: color(red);
                         border: 2px solid color(red);
-                        color: color(red);
+                        color: color(white);
+
+                        @include responsive {
+                            margin-left: 10px;
+                        }
                     }
 
                     img {
