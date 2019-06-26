@@ -7,3 +7,7 @@
 ### 2019-03-05
 
 * Add GraphQL to the project
+
+### 2019-06-22
+
+* Change landing UI
