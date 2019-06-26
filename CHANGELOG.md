@@ -1,9 +1,9 @@
-# CHANGELOG
+## CHANGELOG
 
-## 2019-02-17
+### 2019-02-17
 
 * Project created
 
-## 2019-03-05
+### 2019-03-05
 
 * Add GraphQL to the project
