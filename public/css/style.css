@@ -456,6 +456,10 @@ body a:hover {
   color: #FF355B;
 }
 
+#hero .hero .code .editor pre span.comment {
+  color: #949494;
+}
+
 #intro {
   margin-top: 145px;
 }

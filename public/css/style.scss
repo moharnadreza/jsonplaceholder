@@ -406,6 +406,10 @@ body {
                         &.first {
                             color: color(red);
                         }
+
+                        &.comment {
+                            color: color(gray);
+                        }
                     }
                 }
             }
