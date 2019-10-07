@@ -694,6 +694,241 @@ body a:hover {
           animation-delay: 1.5s;
 }
 
+#routes {
+  margin-top: 145px;
+  margin-bottom: 100px;
+}
+
+@media (max-width: 767px) {
+  #routes {
+    margin-top: 80px;
+    margin-bottom: 0;
+  }
+}
+
+#routes .routes .title {
+  margin-bottom: 30px;
+}
+
+#routes .routes .title h3 {
+  margin-bottom: 10px;
+}
+
+#routes .routes .sources {
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  #routes .routes .sources {
+    padding: 0 15px;
+  }
+}
+
+#routes .routes .sources li {
+  list-style: none;
+  border-bottom: 1px dashed rgba(148, 148, 148, 0.4);
+}
+
+#routes .routes .sources li .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+#routes .routes .sources li .item img {
+  width: 25px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+#routes .routes .sources li .item .content {
+  margin-left: 10px;
+}
+
+#routes .routes .sources li .item .content p {
+  color: #0C2D4E;
+  margin-bottom: 3px;
+  -webkit-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
+}
+
+#routes .routes .sources li .item .content span {
+  font-size: 11px;
+  color: #949494;
+  -webkit-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
+}
+
+#routes .routes .sources li .item:hover .content p {
+  color: #FF355B;
+}
+
+#routes .routes .sources li .item:hover .content span {
+  color: #0C2D4E;
+}
+
+#routes .routes .sources li:last-child {
+  border-bottom: none;
+}
+
+#routes .routes .bg {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-image: url("./../img/bottomPattern.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+
+@media (max-width: 767px) {
+  #routes .routes .bg {
+    display: none;
+  }
+}
+
+#routes .routes .bg .circle {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  background: #FFFFFF;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0 0 60px rgba(0, 0, 0, 0.03);
+          box-shadow: 0 0 60px rgba(0, 0, 0, 0.03);
+  -webkit-animation: bounce 3s ease-in-out infinite;
+          animation: bounce 3s ease-in-out infinite;
+}
+
+#routes .routes .bg .circle img {
+  width: 20px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#routes .routes .bg .circle.one {
+  top: 20%;
+  left: 20%;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+#routes .routes .bg .circle.two {
+  top: 55%;
+  left: 24%;
+  -webkit-animation-delay: 1.7s;
+          animation-delay: 1.7s;
+}
+
+#routes .routes .bg .circle.three {
+  top: 40%;
+  left: 55%;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+#routes .routes .bg .circle.four {
+  top: 80%;
+  left: 75%;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+
+#routes .routes .bg .circle.five {
+  top: 5%;
+  left: 85%;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+#graph .code .editor {
+  background-color: #FFFFFF;
+  padding: 15px 25px 20px 15px;
+  border-radius: 12px;
+  margin-top: 40px;
+  -webkit-box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
+}
+
+@media (max-width: 767px) {
+  #graph .code .editor {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+#graph .code .editor .controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+}
+
+#graph .code .editor .controls i {
+  width: 8px;
+  height: 8px;
+  border-radius: 100px;
+  margin-left: 8px;
+}
+
+#graph .code .editor .controls i:nth-child(1) {
+  background-color: #FE5F56;
+  margin-left: 0;
+}
+
+#graph .code .editor .controls i:nth-child(2) {
+  background-color: #FFBD2D;
+}
+
+#graph .code .editor .controls i:nth-child(3) {
+  background-color: #25C93F;
+}
+
+#graph .code .editor pre {
+  color: #0C2D4E;
+  margin: 0;
+}
+
+#graph .code .editor pre code {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+}
+
+@media (max-width: 767px) {
+  #graph .code .editor pre code {
+    font-size: 11px;
+  }
+}
+
+#graph .code .editor pre span {
+  color: #2DAEFF;
+}
+
+#graph .code .editor pre span.first {
+  color: #FF355B;
+}
+
+#graph .code .editor pre span.comment {
+  color: #949494;
+}
+
 @-webkit-keyframes bounce {
   0% {
     -webkit-transform: translateY(0);
