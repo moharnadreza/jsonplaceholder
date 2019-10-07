@@ -10,7 +10,7 @@
     <link rel="icon" href="./img/fav.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
-    <title>PersianJSONPlaceholder - Persian Fake online REST API for Iranian developers</title>
+    <title>PersianJSONPlaceholder - Persian Fake online REST / GraphQL API for Iranian developers</title>
 </head>
 
 <body>
@@ -27,7 +27,7 @@
                         <div class="links">
                             <ul>
                                 <li>
-                                    <a href="https://github.com/themzed/PersianJSONPlaceholder" target="_blank">Docs</a>
+                                    <a href="https://github.com/themzed/PersianJSONPlaceholder" target="_blank">Github/Docs</a>
                                 </li>
                                 <li>
                                     <a href="http://vrgl.ir/vqwxA" target="_blank">Read more</a>
@@ -56,7 +56,7 @@
                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 content-sec">
                                 <div class="content">
                                     <h1>Persian <br> JSONPlaceholder</h1>
-                                    <p>Persian Fake Online REST API for Testing and Prototyping </p>
+                                    <p>Persian Fake Online REST / GraphQL API for Testing and Prototyping </p>
                                     <p>Based on <a href="https://jsonplaceholder.typicode.com/"
                                             target="_blank">JSONPlaceholder</a></p>
                                     <div class="action">
@@ -100,15 +100,15 @@
                     <div class="intro">
                         <div class="title">
                             <h3>Introduction</h3>
-                            <p>This is a free online REST API that returns Persian data (RTL data). You can use whenever
+                            <p>This is a free online REST / GraphQL API that returns Persian data (RTL data). You can use whenever
                                 you need some fake data.</p>
                         </div>
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="card">
                                     <img src="./img/http.svg" alt="">
-                                    <h5>HTTP methods</h5>
-                                    <p>HTTP methods, GET, POST, PUT, PATCH and DELETE</p>
+                                    <h5>HTTP + GraphQL</h5>
+                                    <p>All HTTP methods, GET, POST, PUT, PATCH and DELETE and also GraphQL</p>
                                 </div>
                             </div>
                             <div class="col-md-4">
@@ -218,6 +218,173 @@
                                         <img src="./img/code.svg" alt="">
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="routes">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8 col-lg-10 col-md-12 col-sm-12 col-12">
+                    <div class="routes">
+                        <div class="title">
+                            <h3>Routes</h3>
+                            <p>All HTTP methods are supported.</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <ul class="sources">
+                                    <li>
+                                        <a href="https://github.com/themzed/PersianJSONPlaceholder#listing-resources" target="_blank" class="item">
+                                            <div class="content">
+                                                <p>Listing resources</p>
+                                                <span>GET /posts</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/themzed/PersianJSONPlaceholder#showing-a-resource" target="_blank" class="item">
+                                            <div class="content">
+                                                <p>Showing a resource</p>
+                                                <span>GET /posts/1</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/themzed/PersianJSONPlaceholder#creating-a-resource" class="item">
+                                            <div class="content">
+                                                <p>Creating a resource</p>
+                                                <span>POST /posts</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/themzed/PersianJSONPlaceholder#updating-a-resource" class="item">
+                                            <div class="content">
+                                                <p>Updating a resource</p>
+                                                <span>PUT /posts/1</span>
+                                                <br/>
+                                                <span>PATCH	/posts/1</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/themzed/PersianJSONPlaceholder#deleting-a-resource" class="item">
+                                            <div class="content">
+                                                <p>Deleting a resource</p>
+                                                <span>DELETE /posts/1</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/themzed/PersianJSONPlaceholder#filtering-resources" class="item">
+                                            <div class="content">
+                                                <p>Filtering resources</p>
+                                                <span>GET /posts?userId=1</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/themzed/PersianJSONPlaceholder#nested-resources" class="item">
+                                            <div class="content">
+                                                <p>Nested resources</p>
+                                                <span>GET /posts/1/comments</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="bg">
+                                    <div class="circle one">
+                                        <p>GET</p>
+                                    </div>
+                                    <div class="circle two">
+                                        <p>POST</p>
+                                    </div>
+                                    <div class="circle three">
+                                        <p>PUT</p>
+                                    </div>
+                                    <div class="circle four">
+                                        <p>PATCH</p>
+                                    </div>
+                                    <div class="circle five">
+                                        <p>DELETE</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="graph">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8 col-lg-10 col-md-12 col-sm-12 col-12">
+                    <div class="routes">
+                        <div class="title">
+                            <h3>Use JSONPlaceholder with GraphQL</h3>
+                            <p>All of the requests are available in https://jsonplaceholder.ir/graphql with different queries, get needed params for each one.</p>
+                        </div>
+                        <div class="code">
+                            <div class="editor">
+                                <div class="controls">
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                </div>
+                                <pre><code><span class="comment">// For example:get all data for one topic</span>
+let queryAllPosts = "{ posts { title body } }"
+let queryAllComments = "{ comments { name email } }"
+let queryAllAlbums = "{ albums { userId title } }"
+let queryAllPhotos = "{ photos { title url } }"
+let queryAllTodos = "{ todos { title completed } }"
+let queryAllUsers = "{ users { username email } }"
+
+<span class="comment">// For example:get specific data by id</span>
+let queryOnePost = "{ post(id:2)  { title body } }"
+let queryOneComment = "{ comment(id:3) { name email } }"
+let queryOneAlbum = "{ album(id:4) { userId title } }"
+let queryOnePhoto = "{ photo(id:5) { title url } }"
+let queryOneTodo = "{ todo(id:6) { title completed } }"
+let queryOneUser = "{ user(id:7) { username email } }"
+<span class="comment">// and ...</span>
+
+
+
+<span class="comment">// Fetch data as JSON file format</span>
+const request = require('request');
+
+request({
+    method: 'POST',
+    url: '<span class="first">https://jsonplaceholder.ir/graphql</span>',
+    json: {
+        "query": queryOnePhoto
+    }
+}, (err, res, data) => {
+    <span>console</span>.log(data)
+})
+
+
+
+<span class="comment">// Or use request package to fetch data as JSON file format</span>
+fetch('<span class="first">https://jsonplaceholder.ir/graphql</span>', {
+    method: 'POST',
+    body: JSON.stringify(queryOneUser),
+    headers: {
+        "Content-type": "application/json; charset=UTF-8"
+    }
+    })
+    .then(response => response.json())
+    .then(json => <span>console</span>.log(json))
+</code></pre>
                             </div>
                         </div>
                     </div>
