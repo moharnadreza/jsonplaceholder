@@ -585,10 +585,7 @@ body a:hover {
   width: 25px;
   -ms-flex-item-align: start;
       align-self: flex-start;
-}
-
-#resources .resources .sources li .item .content {
-  margin-left: 10px;
+  margin-right: 10px;
 }
 
 #resources .resources .sources li .item .content p {
