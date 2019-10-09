@@ -16,12 +16,12 @@ I hope you will find it useful.
 
 Let's start with resources, JSONPlaceholder provides the usual suspects:
 
-* Posts https://jsonplaceholder.ir/posts/1
-* Comments https://jsonplaceholder.ir/comments/1
-* Albums https://jsonplaceholder.ir/albums/1
-* Photos https://jsonplaceholder.ir/photos/1
-* Users https://jsonplaceholder.ir/users/1
-* Todos https://jsonplaceholder.ir/todos/1
+* Posts https://jsonplaceholder.ir/posts
+* Comments https://jsonplaceholder.ir/comments
+* Albums https://jsonplaceholder.ir/albums
+* Photos https://jsonplaceholder.ir/photos
+* Users https://jsonplaceholder.ir/users
+* Todos https://jsonplaceholder.ir/todos
 
 ## How to
 
@@ -48,18 +48,18 @@ fetch('https://jsonplaceholder.ir/posts')
 ```js
 // POST adds a random id to the object sent
 fetch('https://jsonplaceholder.ir/posts', {
-    method: 'POST',
-    body: JSON.stringify({
-      title: 'foo',
-      body: 'bar',
-      userId: 1
-    }),
-    headers: {
-      "Content-type": "application/json; charset=UTF-8"
-    }
-  })
-  .then(response => response.json())
-  .then(json => console.log(json))
+  method: 'POST',
+  body: JSON.stringify({
+    title: 'foo',
+    body: 'bar',
+    userId: 1
+  }),
+  headers: {
+    "Content-type": "application/json; charset=UTF-8"
+  }
+})
+.then(response => response.json())
+.then(json => console.log(json))
 
 /* will return
 {
@@ -77,19 +77,19 @@ Note: the resource will not be really created on the server but it will be faked
 
 ```js
 fetch('https://jsonplaceholder.ir/posts/1', {
-    method: 'PUT',
-    body: JSON.stringify({
-      id: 1,
-      title: 'foo',
-      body: 'bar',
-      userId: 1
-    }),
-    headers: {
-      "Content-type": "application/json; charset=UTF-8"
-    }
-  })
-  .then(response => response.json())
-  .then(json => console.log(json))
+  method: 'PUT',
+  body: JSON.stringify({
+    id: 1,
+    title: 'foo',
+    body: 'bar',
+    userId: 1
+  }),
+  headers: {
+    "Content-type": "application/json; charset=UTF-8"
+  }
+})
+.then(response => response.json())
+.then(json => console.log(json))
 
 /* will return
 {
@@ -103,16 +103,16 @@ fetch('https://jsonplaceholder.ir/posts/1', {
 
 ```js
 fetch('https://jsonplaceholder.ir/posts/1', {
-    method: 'PATCH',
-    body: JSON.stringify({
-      title: 'foo'
-    }),
-    headers: {
-      "Content-type": "application/json; charset=UTF-8"
-    }
-  })
-  .then(response => response.json())
-  .then(json => console.log(json))
+  method: 'PATCH',
+  body: JSON.stringify({
+    title: 'foo'
+  }),
+  headers: {
+    "Content-type": "application/json; charset=UTF-8"
+  }
+})
+.then(response => response.json())
+.then(json => console.log(json))
 
 /* will return
 {
@@ -166,12 +166,9 @@ Here's the list of available nested routes:
 * https://jsonplaceholder.ir/users/1/todos
 * https://jsonplaceholder.ir/users/1/posts
 
-
-
 ### Use JSONPlaceholder with GraphQL 
 
 All of the requests are available in https://jsonplaceholder.ir/graphql with different queries, get needed params for each one :)
-
 
 ```js
 // For example:get all data for one topic
@@ -191,9 +188,7 @@ let queryOneTodo = "{ todo(id:6) { title completed } }"
 let queryOneUser = "{ user(id:7) { username email } }"
 // and ...
 
-
-
-// Fetch data as JSON file format
+// Or use request package to fetch data as JSON file format
 const request = require('request');
 
 request({
@@ -206,9 +201,7 @@ request({
     console.log(data)
 })
 
-
-
-// Or use request package to fetch data as JSON file format
+// Fetch data as JSON file format
 fetch('https://jsonplaceholder.ir/graphql', {
     method: 'POST',
     body: JSON.stringify(queryOneUser),
@@ -218,7 +211,6 @@ fetch('https://jsonplaceholder.ir/graphql', {
   })
   .then(response => response.json())
   .then(json => console.log(json))
-
 ```
 
 ## ToDo
