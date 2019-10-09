@@ -14,7 +14,10 @@ $color: (
     black: #0C2D4E,
     gray: #949494,
     white: #FFFFFF,
-    red: #FF355B
+    red: #FF355B,
+    green: #00E9A2,
+    blue: #00E5FF,
+    brown: #BF4D00
 );
 
 // function for colors
@@ -582,34 +585,63 @@ body {
                     user-select: none;
                 }
 
+                span {
+                    font-size: 11px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    user-select: none;
+
+                }
+
                 &.one {
                     top: 20%;
                     left: 20%;
                     animation-delay: 1s;
+
+                    span {
+                        color: color(green);
+                    }
                 }
 
                 &.two {
                     top: 55%;
                     left: 24%;
                     animation-delay: 1.7s;
+
+                    span {
+                        color: color(black);
+                    }
                 }
 
                 &.three {
                     top: 40%;
                     left: 55%;
                     animation-delay: 2s;
+
+                    span {
+                        color: color(blue);
+                    }
                 }
 
                 &.four {
                     top: 80%;
                     left: 75%;
                     animation-delay: 1.2s;
+
+                    span {
+                        color: color(brown);
+                    }
                 }
 
                 &.five {
                     top: 5%;
                     left: 85%;
                     animation-delay: 1.5s;
+
+                    span {
+                        color: color(red);
+                    }
                 }
             }
         }

@@ -659,11 +659,32 @@ body a:hover {
           user-select: none;
 }
 
+#resources .resources .bg .circle span {
+  font-size: 11px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
 #resources .resources .bg .circle.one {
   top: 20%;
   left: 20%;
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
+}
+
+#resources .resources .bg .circle.one span {
+  color: #00E9A2;
 }
 
 #resources .resources .bg .circle.two {
@@ -673,11 +694,19 @@ body a:hover {
           animation-delay: 1.7s;
 }
 
+#resources .resources .bg .circle.two span {
+  color: #0C2D4E;
+}
+
 #resources .resources .bg .circle.three {
   top: 40%;
   left: 55%;
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
+}
+
+#resources .resources .bg .circle.three span {
+  color: #00E5FF;
 }
 
 #resources .resources .bg .circle.four {
@@ -687,11 +716,19 @@ body a:hover {
           animation-delay: 1.2s;
 }
 
+#resources .resources .bg .circle.four span {
+  color: #BF4D00;
+}
+
 #resources .resources .bg .circle.five {
   top: 5%;
   left: 85%;
   -webkit-animation-delay: 1.5s;
           animation-delay: 1.5s;
+}
+
+#resources .resources .bg .circle.five span {
+  color: #FF355B;
 }
 
 @-webkit-keyframes bounce {
