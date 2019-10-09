@@ -1,7 +1,7 @@
 {
   "name": "jsonplaceholder",
-  "version": "0.3.3",
-  "description": "Persian Fake online REST API server for testing and prototyping.",
+  "version": "0.3.4",
+  "description": "Persian Fake online REST/GraphQL API server for testing and prototyping.",
   "keywords": [
     "fake",
     "JSON",
@@ -16,8 +16,7 @@
     "Farsi",
     "Persian Fake JSON",
     "Farsi fake JSON",
-    "جیسون تقلبی",
-    "json تقلبی",
+    "json فیک",
     "Persian API"
   ],
   "homepage": "https://jsonplaceholder.ir",
