@@ -16,7 +16,7 @@ $color: (
     white: #FFFFFF,
     red: #FF355B,
     green: #00E9A2,
-    blue: #00E5FF,
+    blue: #009bfd,
     brown: #BF4D00
 );
 
@@ -395,8 +395,8 @@ body {
 
                     code {
                         font-family: 'Ubuntu', sans-serif;
-                        font-size: 12px;
-                        letter-spacing: 1.5px;
+                        font-size: 11px;
+                        letter-spacing: 1px;
 
                         @include responsive {
                             font-size: 11px;
@@ -404,7 +404,7 @@ body {
                     }
 
                     span {
-                        color: #2DAEFF;
+                        color: color(blue);
 
                         &.first {
                             color: color(red);
@@ -510,11 +510,10 @@ body {
                     font-size: 11px;
                     font-family: ubuntu;
                     letter-spacing: 1px;
-                    background: #F3F3F3;
+                    background: #FAFAFA;
                     padding: 4px 6px;
                     border-radius: 4px;
                     color: color(black);
-                    margin: 0 1px;
                 }
             }
         }
@@ -570,7 +569,7 @@ body {
                 .item {
                     display: flex;
                     align-items: center;
-                    padding: 10px;
+                    padding: 10px 5px;
 
                     img {
                         width: 25px;
@@ -723,10 +722,14 @@ body {
 }
 
 footer {
-    padding: 60px 0;
+    padding: 0 0 100px 0;
     background-color: transparent;
     text-align: center;
     line-height: 1.75;
+
+    @include responsive {
+        padding: 60px 0;
+    }
 
     p {
         display: flex;

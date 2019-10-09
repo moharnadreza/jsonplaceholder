@@ -438,8 +438,8 @@ body a:hover {
 
 #hero .hero .code .editor pre code, #hero .hero .docs .resources .editor pre code, .docs #hero .hero .resources .editor pre code {
   font-family: 'Ubuntu', sans-serif;
-  font-size: 12px;
-  letter-spacing: 1.5px;
+  font-size: 11px;
+  letter-spacing: 1px;
 }
 
 @media (max-width: 767px) {
@@ -449,7 +449,7 @@ body a:hover {
 }
 
 #hero .hero .code .editor pre span, #hero .hero .docs .resources .editor pre span, .docs #hero .hero .resources .editor pre span {
-  color: #2DAEFF;
+  color: #009bfd;
 }
 
 #hero .hero .code .editor pre span.first, #hero .hero .docs .resources .editor pre span.first, .docs #hero .hero .resources .editor pre span.first {
@@ -567,7 +567,7 @@ body a:hover {
   font-size: 11px;
   font-family: ubuntu;
   letter-spacing: 1px;
-  background: #F3F3F3;
+  background: #FAFAFA;
   padding: 4px 6px;
   border-radius: 4px;
   color: #0C2D4E;
@@ -632,7 +632,7 @@ body a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px;
+  padding: 10px 5px;
 }
 
 .docs .resources .sources li .item img {
@@ -757,7 +757,7 @@ body a:hover {
 }
 
 .docs .resources .bg .circle.three span {
-  color: #00E5FF;
+  color: #009bfd;
 }
 
 .docs .resources .bg .circle.four {
@@ -813,10 +813,16 @@ body a:hover {
 }
 
 footer {
-  padding: 60px 0;
+  padding: 0 0 100px 0;
   background-color: transparent;
   text-align: center;
   line-height: 1.75;
+}
+
+@media (max-width: 767px) {
+  footer {
+    padding: 60px 0;
+  }
 }
 
 footer p {
