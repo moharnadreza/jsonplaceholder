@@ -134,7 +134,7 @@
         </div>
     </section>
 
-    <section id="resources">
+    <section class="docs">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-8 col-lg-10 col-md-12 col-sm-12 col-12">
@@ -228,7 +228,7 @@
         </div>
     </section>
 
-    <section id="resources">
+    <section class="docs">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-8 col-lg-10 col-md-12 col-sm-12 col-12">
@@ -324,67 +324,37 @@
         </div>
     </section>
 
-    <section id="graph">
+    <section class="docs">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-8 col-lg-10 col-md-12 col-sm-12 col-12">
-                    <div class="routes">
+                    <div class="resources">
                         <div class="title">
                             <h3>Use JSONPlaceholder with GraphQL</h3>
-                            <p>All of the requests are available in https://jsonplaceholder.ir/graphql with different
-                                queries, get needed params for each one.</p>
+                            <p>All of the requests are available in <code>https://jsonplaceholder.ir/graphql</code> with
+                                different
+                                queries, read more <a
+                                    href="https://github.com/themzed/PersianJSONPlaceholder#use-jsonplaceholder-with-graphql"
+                                    target="_blank">here</a>.</p>
                         </div>
                         <div class="code">
                             <div class="editor">
-                                <div class="controls">
-                                    <i></i>
-                                    <i></i>
-                                    <i></i>
-                                </div>
                                 <pre><code><span class="comment">// For example:get all data for one topic</span>
 let queryAllPosts = "{ posts { title body } }"
 let queryAllComments = "{ comments { name email } }"
-let queryAllAlbums = "{ albums { userId title } }"
-let queryAllPhotos = "{ photos { title url } }"
-let queryAllTodos = "{ todos { title completed } }"
-let queryAllUsers = "{ users { username email } }"
 
 <span class="comment">// For example:get specific data by id</span>
-let queryOnePost = "{ post(id:2)  { title body } }"
-let queryOneComment = "{ comment(id:3) { name email } }"
 let queryOneAlbum = "{ album(id:4) { userId title } }"
-let queryOnePhoto = "{ photo(id:5) { title url } }"
 let queryOneTodo = "{ todo(id:6) { title completed } }"
-let queryOneUser = "{ user(id:7) { username email } }"
 <span class="comment">// and ...</span>
 
-
-
 <span class="comment">// Fetch data as JSON file format</span>
-const request = require('request');
-
-request({
-    method: 'POST',
-    url: '<span class="first">https://jsonplaceholder.ir/graphql</span>',
-    json: {
-        "query": queryOnePhoto
-    }
-}, (err, res, data) => {
-    <span>console</span>.log(data)
-})
-
-
-
-<span class="comment">// Or use request package to fetch data as JSON file format</span>
 fetch('<span class="first">https://jsonplaceholder.ir/graphql</span>', {
     method: 'POST',
-    body: JSON.stringify(queryOneUser),
-    headers: {
-        "Content-type": "application/json; charset=UTF-8"
-    }
-    })
-    .then(response => response.json())
-    .then(json => <span>console</span>.log(json))
+    body: JSON.stringify(queryOneTodo)
+})
+.then(response => response.json())
+.then(json => <span>console</span>.log(json))
 </code></pre>
                             </div>
                         </div>

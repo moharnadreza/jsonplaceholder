@@ -362,7 +362,7 @@ body a:hover {
   margin-right: 7px;
 }
 
-#hero .hero .code {
+#hero .hero .code, #hero .hero .docs .resources, .docs #hero .hero .resources {
   min-height: 25vh;
   background-image: url("./../img/topPattern.svg");
   background-repeat: no-repeat;
@@ -380,12 +380,12 @@ body a:hover {
 }
 
 @media (max-width: 767px) {
-  #hero .hero .code {
+  #hero .hero .code, #hero .hero .docs .resources, .docs #hero .hero .resources {
     min-height: 40vh;
   }
 }
 
-#hero .hero .code .editor {
+#hero .hero .code .editor, #hero .hero .docs .resources .editor, .docs #hero .hero .resources .editor {
   background-color: #FFFFFF;
   padding: 15px 25px 20px 15px;
   border-radius: 12px;
@@ -395,13 +395,13 @@ body a:hover {
 }
 
 @media (max-width: 767px) {
-  #hero .hero .code .editor {
+  #hero .hero .code .editor, #hero .hero .docs .resources .editor, .docs #hero .hero .resources .editor {
     width: 100%;
     margin: 0;
   }
 }
 
-#hero .hero .code .editor .controls {
+#hero .hero .code .editor .controls, #hero .hero .docs .resources .editor .controls, .docs #hero .hero .resources .editor .controls {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -411,52 +411,52 @@ body a:hover {
   margin-bottom: 15px;
 }
 
-#hero .hero .code .editor .controls i {
+#hero .hero .code .editor .controls i, #hero .hero .docs .resources .editor .controls i, .docs #hero .hero .resources .editor .controls i {
   width: 8px;
   height: 8px;
   border-radius: 100px;
   margin-left: 8px;
 }
 
-#hero .hero .code .editor .controls i:nth-child(1) {
+#hero .hero .code .editor .controls i:nth-child(1), #hero .hero .docs .resources .editor .controls i:nth-child(1), .docs #hero .hero .resources .editor .controls i:nth-child(1) {
   background-color: #FE5F56;
   margin-left: 0;
 }
 
-#hero .hero .code .editor .controls i:nth-child(2) {
+#hero .hero .code .editor .controls i:nth-child(2), #hero .hero .docs .resources .editor .controls i:nth-child(2), .docs #hero .hero .resources .editor .controls i:nth-child(2) {
   background-color: #FFBD2D;
 }
 
-#hero .hero .code .editor .controls i:nth-child(3) {
+#hero .hero .code .editor .controls i:nth-child(3), #hero .hero .docs .resources .editor .controls i:nth-child(3), .docs #hero .hero .resources .editor .controls i:nth-child(3) {
   background-color: #25C93F;
 }
 
-#hero .hero .code .editor pre {
+#hero .hero .code .editor pre, #hero .hero .docs .resources .editor pre, .docs #hero .hero .resources .editor pre {
   color: #0C2D4E;
   margin: 0;
 }
 
-#hero .hero .code .editor pre code {
+#hero .hero .code .editor pre code, #hero .hero .docs .resources .editor pre code, .docs #hero .hero .resources .editor pre code {
   font-family: 'Ubuntu', sans-serif;
   font-size: 12px;
   letter-spacing: 1.5px;
 }
 
 @media (max-width: 767px) {
-  #hero .hero .code .editor pre code {
+  #hero .hero .code .editor pre code, #hero .hero .docs .resources .editor pre code, .docs #hero .hero .resources .editor pre code {
     font-size: 11px;
   }
 }
 
-#hero .hero .code .editor pre span {
+#hero .hero .code .editor pre span, #hero .hero .docs .resources .editor pre span, .docs #hero .hero .resources .editor pre span {
   color: #2DAEFF;
 }
 
-#hero .hero .code .editor pre span.first {
+#hero .hero .code .editor pre span.first, #hero .hero .docs .resources .editor pre span.first, .docs #hero .hero .resources .editor pre span.first {
   color: #FF355B;
 }
 
-#hero .hero .code .editor pre span.comment {
+#hero .hero .code .editor pre span.comment, #hero .hero .docs .resources .editor pre span.comment, .docs #hero .hero .resources .editor pre span.comment {
   color: #949494;
 }
 
@@ -535,43 +535,97 @@ body a:hover {
   }
 }
 
-#resources {
+.docs {
   margin-top: 145px;
   margin-bottom: 100px;
 }
 
+.docs:last-child {
+  margin-bottom: 0 !important;
+}
+
 @media (max-width: 767px) {
-  #resources {
+  .docs {
     margin-top: 80px;
     margin-bottom: 0;
   }
 }
 
-#resources .resources .title {
+.docs .resources .title {
   margin-bottom: 30px;
 }
 
-#resources .resources .title h3 {
+.docs .resources .title h3 {
   margin-bottom: 10px;
 }
 
-#resources .resources .sources {
+.docs .resources .title p a {
+  color: #0C2D4E;
+}
+
+.docs .resources .title p code {
+  font-size: 11px;
+  font-family: ubuntu;
+  letter-spacing: 1px;
+  background: #F3F3F3;
+  padding: 4px 6px;
+  border-radius: 4px;
+  color: #0C2D4E;
+  margin: 0 1px;
+}
+
+.docs .resources .code .editor, .docs .resources .resources .editor {
+  background-color: #FAFAFA;
+  padding: 20px 25px;
+  border-radius: 12px;
+}
+
+.docs .resources .code .editor pre, .docs .resources .resources .editor pre {
+  color: #0C2D4E;
+  margin: 0;
+}
+
+.docs .resources .code .editor pre code, .docs .resources .resources .editor pre code {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 767px) {
+  .docs .resources .code .editor pre code, .docs .resources .resources .editor pre code {
+    font-size: 11px;
+  }
+}
+
+.docs .resources .code .editor pre span, .docs .resources .resources .editor pre span {
+  color: #2DAEFF;
+}
+
+.docs .resources .code .editor pre span.first, .docs .resources .resources .editor pre span.first {
+  color: #FF355B;
+}
+
+.docs .resources .code .editor pre span.comment, .docs .resources .resources .editor pre span.comment {
+  color: #949494;
+}
+
+.docs .resources .sources {
   padding: 0;
   margin: 0;
 }
 
 @media (max-width: 767px) {
-  #resources .resources .sources {
+  .docs .resources .sources {
     padding: 0 15px;
   }
 }
 
-#resources .resources .sources li {
+.docs .resources .sources li {
   list-style: none;
   border-bottom: 1px dashed rgba(148, 148, 148, 0.4);
 }
 
-#resources .resources .sources li .item {
+.docs .resources .sources li .item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -581,40 +635,40 @@ body a:hover {
   padding: 10px;
 }
 
-#resources .resources .sources li .item img {
+.docs .resources .sources li .item img {
   width: 25px;
   -ms-flex-item-align: start;
       align-self: flex-start;
   margin-right: 10px;
 }
 
-#resources .resources .sources li .item .content p {
+.docs .resources .sources li .item .content p {
   color: #0C2D4E;
   margin-bottom: 3px;
   -webkit-transition: all 100ms ease-in-out;
   transition: all 100ms ease-in-out;
 }
 
-#resources .resources .sources li .item .content span {
+.docs .resources .sources li .item .content span {
   font-size: 11px;
   color: #949494;
   -webkit-transition: all 100ms ease-in-out;
   transition: all 100ms ease-in-out;
 }
 
-#resources .resources .sources li .item:hover .content p {
+.docs .resources .sources li .item:hover .content p {
   color: #FF355B;
 }
 
-#resources .resources .sources li .item:hover .content span {
+.docs .resources .sources li .item:hover .content span {
   color: #0C2D4E;
 }
 
-#resources .resources .sources li:last-child {
+.docs .resources .sources li:last-child {
   border-bottom: none;
 }
 
-#resources .resources .bg {
+.docs .resources .bg {
   width: 100%;
   height: 100%;
   position: relative;
@@ -625,12 +679,12 @@ body a:hover {
 }
 
 @media (max-width: 767px) {
-  #resources .resources .bg {
+  .docs .resources .bg {
     display: none;
   }
 }
 
-#resources .resources .bg .circle {
+.docs .resources .bg .circle {
   width: 70px;
   height: 70px;
   position: absolute;
@@ -648,7 +702,7 @@ body a:hover {
           animation: bounce 3s ease-in-out infinite;
 }
 
-#resources .resources .bg .circle img {
+.docs .resources .bg .circle img {
   width: 20px;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -656,7 +710,7 @@ body a:hover {
           user-select: none;
 }
 
-#resources .resources .bg .circle span {
+.docs .resources .bg .circle span {
   font-size: 11px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -673,58 +727,58 @@ body a:hover {
           user-select: none;
 }
 
-#resources .resources .bg .circle.one {
+.docs .resources .bg .circle.one {
   top: 20%;
   left: 20%;
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
 }
 
-#resources .resources .bg .circle.one span {
+.docs .resources .bg .circle.one span {
   color: #00E9A2;
 }
 
-#resources .resources .bg .circle.two {
+.docs .resources .bg .circle.two {
   top: 55%;
   left: 24%;
   -webkit-animation-delay: 1.7s;
           animation-delay: 1.7s;
 }
 
-#resources .resources .bg .circle.two span {
+.docs .resources .bg .circle.two span {
   color: #0C2D4E;
 }
 
-#resources .resources .bg .circle.three {
+.docs .resources .bg .circle.three {
   top: 40%;
   left: 55%;
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
 }
 
-#resources .resources .bg .circle.three span {
+.docs .resources .bg .circle.three span {
   color: #00E5FF;
 }
 
-#resources .resources .bg .circle.four {
+.docs .resources .bg .circle.four {
   top: 80%;
   left: 75%;
   -webkit-animation-delay: 1.2s;
           animation-delay: 1.2s;
 }
 
-#resources .resources .bg .circle.four span {
+.docs .resources .bg .circle.four span {
   color: #BF4D00;
 }
 
-#resources .resources .bg .circle.five {
+.docs .resources .bg .circle.five {
   top: 5%;
   left: 85%;
   -webkit-animation-delay: 1.5s;
           animation-delay: 1.5s;
 }
 
-#resources .resources .bg .circle.five span {
+.docs .resources .bg .circle.five span {
   color: #FF355B;
 }
 
