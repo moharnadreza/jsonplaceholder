@@ -203,14 +203,14 @@ request({
 
 // Fetch data as JSON file format
 fetch('https://jsonplaceholder.ir/graphql', {
-    method: 'POST',
-    body: JSON.stringify(queryOneUser),
-    headers: {
-      "Content-type": "application/json; charset=UTF-8"
-    }
-  })
-  .then(response => response.json())
-  .then(json => console.log(json))
+  method: 'POST',
+  body: JSON.stringify(queryOneUser),
+  headers: {
+    "Content-type": "application/json; charset=UTF-8"
+  }
+})
+.then(response => response.json())
+.then(json => console.log(json))
 ```
 
 ## ToDo
