@@ -45,7 +45,7 @@ server.applyMiddleware({
 app.use(/^\/(posts|comments|albums|photos|todos|users).*$/, (req, res, next) => {
   const enters = Number(fs.readFileSync('enter.txt', 'utf8'));
   fs.writeFileSync('enter.txt', (enters + 1))
-  if (enters % 10 == 0) {
+  if (enters % 1000 == 0) {
     // Nodemailer Data
     const { transporter, mailOptions } = require('./nodemailer')
     mailOptions['html'] = `<h1 style="color:red">Congratulations</h1>
