@@ -13,7 +13,7 @@ const transporter = nodemailer.createTransport({
 
 const mailOptions = {
     from: 'SenderEmail',
-    to: 'reciever Email',
+    to: 'recieverEmail',
     subject: 'Number of request to Jsonplaceholder Api'
 };
 
