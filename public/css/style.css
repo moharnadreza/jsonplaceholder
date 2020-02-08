@@ -12,7 +12,7 @@ body {
 body h1 {
   font-size: 36px;
   font-weight: bold;
-  color: #0C2D4E;
+  color: #0c2d4e;
   margin: 0 0 15px 0;
 }
 
@@ -25,7 +25,7 @@ body h1 {
 body h3 {
   font-size: 16px;
   font-weight: bold;
-  color: #0C2D4E;
+  color: #0c2d4e;
   margin: 0;
 }
 
@@ -38,7 +38,7 @@ body h3 {
 body h5 {
   font-size: 12px;
   font-weight: bold;
-  color: #0C2D4E;
+  color: #0c2d4e;
   margin: 0;
 }
 
@@ -69,7 +69,7 @@ body a {
 }
 
 body a:hover {
-  color: #0C2D4E;
+  color: #0c2d4e;
 }
 
 #nav .nav {
@@ -121,7 +121,7 @@ body a:hover {
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     z-index: 10;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -200,10 +200,10 @@ body a:hover {
     font-size: 12px;
   }
   #nav .nav .links ul li:last-child a {
-    color: #FF355B;
+    color: #ff355b;
   }
   #nav .nav .links ul li:last-child a:hover {
-    color: #FF355B;
+    color: #ff355b;
   }
 }
 
@@ -231,7 +231,7 @@ body a:hover {
   right: 0;
   top: 5px;
   border-radius: 100px;
-  background-color: #0C2D4E;
+  background-color: #0c2d4e;
   -webkit-transition: 0.3s cubic-bezier(0.73, 0, 0.23, 1);
   transition: 0.3s cubic-bezier(0.73, 0, 0.23, 1);
 }
@@ -339,16 +339,16 @@ body a:hover {
 }
 
 #hero .hero .content .action a.primary {
-  background-color: #0C2D4E;
-  border: 2px solid #0C2D4E;
-  color: #FFFFFF;
+  background-color: #0c2d4e;
+  border: 2px solid #0c2d4e;
+  color: #ffffff;
 }
 
 #hero .hero .content .action a.outline {
   margin-left: 15px;
-  background-color: #FF355B;
-  border: 2px solid #FF355B;
-  color: #FFFFFF;
+  background-color: #ff355b;
+  border: 2px solid #ff355b;
+  color: #ffffff;
 }
 
 @media (max-width: 767px) {
@@ -386,7 +386,7 @@ body a:hover {
 }
 
 #hero .hero .code .editor, #hero .hero .docs .resources .editor, .docs #hero .hero .resources .editor {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   padding: 15px 25px 20px 15px;
   border-radius: 12px;
   margin-left: 10px;
@@ -419,20 +419,20 @@ body a:hover {
 }
 
 #hero .hero .code .editor .controls i:nth-child(1), #hero .hero .docs .resources .editor .controls i:nth-child(1), .docs #hero .hero .resources .editor .controls i:nth-child(1) {
-  background-color: #FE5F56;
+  background-color: #fe5f56;
   margin-left: 0;
 }
 
 #hero .hero .code .editor .controls i:nth-child(2), #hero .hero .docs .resources .editor .controls i:nth-child(2), .docs #hero .hero .resources .editor .controls i:nth-child(2) {
-  background-color: #FFBD2D;
+  background-color: #ffbd2d;
 }
 
 #hero .hero .code .editor .controls i:nth-child(3), #hero .hero .docs .resources .editor .controls i:nth-child(3), .docs #hero .hero .resources .editor .controls i:nth-child(3) {
-  background-color: #25C93F;
+  background-color: #25c93f;
 }
 
 #hero .hero .code .editor pre, #hero .hero .docs .resources .editor pre, .docs #hero .hero .resources .editor pre {
-  color: #0C2D4E;
+  color: #0c2d4e;
   margin: 0;
 }
 
@@ -453,7 +453,7 @@ body a:hover {
 }
 
 #hero .hero .code .editor pre span.first, #hero .hero .docs .resources .editor pre span.first, .docs #hero .hero .resources .editor pre span.first {
-  color: #FF355B;
+  color: #ff355b;
 }
 
 #hero .hero .code .editor pre span.comment, #hero .hero .docs .resources .editor pre span.comment, .docs #hero .hero .resources .editor pre span.comment {
@@ -560,28 +560,27 @@ body a:hover {
 }
 
 .docs .resources .title p a {
-  color: #0C2D4E;
+  color: #0c2d4e;
 }
 
 .docs .resources .title p code {
   font-size: 11px;
   font-family: ubuntu;
   letter-spacing: 1px;
-  background: #FAFAFA;
+  background: #fafafa;
   padding: 4px 6px;
   border-radius: 4px;
-  color: #0C2D4E;
-  margin: 0 1px;
+  color: #0c2d4e;
 }
 
 .docs .resources .code .editor, .docs .resources .resources .editor {
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   padding: 20px 25px;
   border-radius: 12px;
 }
 
 .docs .resources .code .editor pre, .docs .resources .resources .editor pre {
-  color: #0C2D4E;
+  color: #0c2d4e;
   margin: 0;
 }
 
@@ -598,11 +597,11 @@ body a:hover {
 }
 
 .docs .resources .code .editor pre span, .docs .resources .resources .editor pre span {
-  color: #2DAEFF;
+  color: #2daeff;
 }
 
 .docs .resources .code .editor pre span.first, .docs .resources .resources .editor pre span.first {
-  color: #FF355B;
+  color: #ff355b;
 }
 
 .docs .resources .code .editor pre span.comment, .docs .resources .resources .editor pre span.comment {
@@ -643,7 +642,7 @@ body a:hover {
 }
 
 .docs .resources .sources li .item .content p {
-  color: #0C2D4E;
+  color: #0c2d4e;
   margin-bottom: 3px;
   -webkit-transition: all 100ms ease-in-out;
   transition: all 100ms ease-in-out;
@@ -657,11 +656,11 @@ body a:hover {
 }
 
 .docs .resources .sources li .item:hover .content p {
-  color: #FF355B;
+  color: #ff355b;
 }
 
 .docs .resources .sources li .item:hover .content span {
-  color: #0C2D4E;
+  color: #0c2d4e;
 }
 
 .docs .resources .sources li:last-child {
@@ -688,7 +687,7 @@ body a:hover {
   width: 70px;
   height: 70px;
   position: absolute;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -735,7 +734,7 @@ body a:hover {
 }
 
 .docs .resources .bg .circle.one span {
-  color: #00E9A2;
+  color: #00e9a2;
 }
 
 .docs .resources .bg .circle.two {
@@ -746,7 +745,7 @@ body a:hover {
 }
 
 .docs .resources .bg .circle.two span {
-  color: #0C2D4E;
+  color: #0c2d4e;
 }
 
 .docs .resources .bg .circle.three {
@@ -768,7 +767,7 @@ body a:hover {
 }
 
 .docs .resources .bg .circle.four span {
-  color: #BF4D00;
+  color: #bf4d00;
 }
 
 .docs .resources .bg .circle.five {
@@ -779,7 +778,7 @@ body a:hover {
 }
 
 .docs .resources .bg .circle.five span {
-  color: #FF355B;
+  color: #ff355b;
 }
 
 @-webkit-keyframes bounce {
@@ -846,7 +845,7 @@ footer p {
 footer i {
   width: 4px;
   height: 4px;
-  background-color: #0C2D4E;
+  background-color: #0c2d4e;
   border-radius: 100px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -872,12 +871,12 @@ footer i {
 }
 
 footer span a {
-  color: #FF355B;
+  color: #ff355b;
   margin: 0;
 }
 
 footer span a:hover {
-  color: #FF355B;
+  color: #ff355b;
 }
 
 footer img {

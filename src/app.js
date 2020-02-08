@@ -1,6 +1,6 @@
 const jsonServer = require('json-server')
 const clone = require('clone')
-const { ApolloServer, gql } = require('apollo-server-express');
+const { ApolloServer, gql } = require('apollo-server-express')
 
 const data = require('../data.json')
 
@@ -15,9 +15,11 @@ app.use((req, res, next) => {
   next()
 })
 
-app.use(jsonServer.defaults({
-  logger: process.env.NODE_ENV !== 'production'
-}))
+app.use(
+  jsonServer.defaults({
+    logger: process.env.NODE_ENV !== 'production'
+  })
+)
 
 app.use(router)
 
