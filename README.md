@@ -1,4 +1,4 @@
-# Persian JSONPlaceholder
+# PersianJSONPlaceholder
 
 [Persian JSONPlaceholder](https://jsonplaceholder.ir) is a simple fake REST API for testing and prototyping.
 
