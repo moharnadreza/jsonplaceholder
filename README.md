@@ -71,7 +71,7 @@ fetch('https://jsonplaceholder.ir/posts', {
 */
 ```
 
-Note: the resource will not be really created on the server but it will be faked as if.
+Note: these resources will not be really created / updated or deleted on the server but it will be faked as if.
 
 ### Updating a resource
 
@@ -124,8 +124,6 @@ fetch('https://jsonplaceholder.ir/posts/1', {
 */
 ```
 
-Note: the resource will not be really updated on the server but it will be faked as if.
-
 ### Deleting a resource
 
 ```js
@@ -133,8 +131,6 @@ fetch('https://jsonplaceholder.ir/posts/1', {
   method: 'DELETE',
 });
 ```
-
-Note: the resource will not be really deleted on the server but it will be faked as if.
 
 ### Filtering resources
 
