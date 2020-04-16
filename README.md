@@ -63,7 +63,7 @@ fetch('https://jsonplaceholder.ir/posts', {
 
 /* will return
 {
-  id: 101,
+  id: 100,
   title: 'foo',
   body: 'bar',
   userId: 1
