@@ -1,26 +1,26 @@
-const jsonServer = require('json-server')
-const clone = require('clone')
-const { ApolloServer, gql } = require('apollo-server-express')
+const jsonServer = require('json-server');
+const clone = require('clone');
+const { ApolloServer, gql } = require('apollo-server-express');
 
-const data = require('../data.json')
+const data = require('../data.json');
 
-const app = jsonServer.create()
+const app = jsonServer.create();
 const router = jsonServer.router(clone(data), {
-  _isFake: true
-})
+  _isFake: true,
+});
 
 app.use((req, res, next) => {
-  if (req.path === '/') return next()
-  router.db.setState(clone(data))
-  next()
-})
+  if (req.path === '/') return next();
+  router.db.setState(clone(data));
+  next();
+});
 
 app.use(
   jsonServer.defaults({
-    logger: process.env.NODE_ENV !== 'production'
+    logger: process.env.NODE_ENV !== 'production',
   })
-)
+);
 
-app.use(router)
+app.use(router);
 
-module.exports = app
+module.exports = app;
