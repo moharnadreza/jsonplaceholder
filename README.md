@@ -211,8 +211,3 @@ fetch('https://jsonplaceholder.ir/graphql', {
   .then((response) => response.json())
   .then((json) => console.log(json));
 ```
-
-## ToDo
-
-- Add meaningful data
-- Add pagination
