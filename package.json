@@ -30,6 +30,7 @@
   "dependencies": {
     "apollo-server-express": "^2.11.0",
     "clone": "^2.1.2",
+    "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "graphql": "^14.6.0",
     "json-server": "^0.16.1",
