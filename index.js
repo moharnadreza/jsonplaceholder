@@ -1,7 +1,3 @@
-// use env file to config
-const dotenv = require('dotenv').config()
-const moment = require('moment')
-
 // required packages
 const jsonServer = require('json-server')
 const clone = require('clone')
@@ -43,20 +39,6 @@ app.use(
   (req, res, next) => {
     const enters = Number(fs.readFileSync('enter.txt', 'utf8'))
     fs.writeFileSync('enter.txt', enters + 1)
-    if (enters % 300 == 0) {
-      // Nodemailer Data
-      const { transporter, mailOptions } = require('./nodemailer')
-      mailOptions['html'] = `<h1 style="color:red">Congratulations</h1>
-    <h2>Number of requests to Jsonplaceholder achieve ${String(
-      enters
-    )}</h2> at ${moment().format()}`
-
-      transporter.sendMail(mailOptions, error => {
-        if (error) {
-          console.log('Error in sending mail', error)
-        }
-      })
-    }
     next()
   }
 )
