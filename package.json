@@ -3,20 +3,11 @@
   "version": "1.0.3",
   "description": "Persian Fake online REST/GraphQL API server for testing and prototyping.",
   "keywords": [
-    "fake",
-    "JSON",
-    "server",
-    "REST",
-    "dummy",
-    "data",
-    "API",
-    "testing",
-    "prototyping",
-    "Persian",
-    "Farsi",
-    "Persian Fake JSON",
-    "Farsi fake JSON",
-    "Persian API"
+    "json",
+    "prototype",
+    "jsonplaceholder",
+    "graphql",
+    "rest"
   ],
   "homepage": "https://jsonplaceholder.ir",
   "repository": {
