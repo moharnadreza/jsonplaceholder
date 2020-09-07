@@ -1,6 +1,7 @@
 // required packages
 const jsonServer = require('json-server')
 const clone = require('clone')
+const fs = require('fs')
 
 const { ApolloServer, gql } = require('apollo-server-express')
 
@@ -21,7 +22,6 @@ const router = jsonServer.router(clone(data), {
 // required controllers and configs for graphql
 const typeDefs = require('./graphql/typeDefs')
 const resolvers = require('./graphql/resolvers')
-const fs = require('fs')
 
 // make apollo server
 const server = new ApolloServer({
