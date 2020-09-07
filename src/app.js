@@ -1,7 +1,6 @@
 const jsonServer = require('json-server')
 const clone = require('clone')
-var cors = require('cors')
-const { ApolloServer, gql } = require('apollo-server-express')
+const cors = require('cors')
 
 const data = require('../data.json')
 
