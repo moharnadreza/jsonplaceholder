@@ -31,16 +31,16 @@ Here's some code using [Fetch API](https://developer.mozilla.org/en-US/docs/Web/
 
 ```js
 fetch('https://jsonplaceholder.ir/posts/1')
-  .then((response) => response.json())
-  .then((json) => console.log(json));
+  .then(response => response.json())
+  .then(json => console.log(json))
 ```
 
 ### Listing resources
 
 ```js
 fetch('https://jsonplaceholder.ir/posts')
-  .then((response) => response.json())
-  .then((json) => console.log(json));
+  .then(response => response.json())
+  .then(json => console.log(json))
 ```
 
 ### Creating a resource
@@ -58,8 +58,8 @@ fetch('https://jsonplaceholder.ir/posts', {
     'Content-type': 'application/json; charset=UTF-8',
   },
 })
-  .then((response) => response.json())
-  .then((json) => console.log(json));
+  .then(response => response.json())
+  .then(json => console.log(json))
 
 /* will return
 {
@@ -88,8 +88,8 @@ fetch('https://jsonplaceholder.ir/posts/1', {
     'Content-type': 'application/json; charset=UTF-8',
   },
 })
-  .then((response) => response.json())
-  .then((json) => console.log(json));
+  .then(response => response.json())
+  .then(json => console.log(json))
 
 /* will return
 {
@@ -111,8 +111,8 @@ fetch('https://jsonplaceholder.ir/posts/1', {
     'Content-type': 'application/json; charset=UTF-8',
   },
 })
-  .then((response) => response.json())
-  .then((json) => console.log(json));
+  .then(response => response.json())
+  .then(json => console.log(json))
 
 /* will return
 {
@@ -129,7 +129,7 @@ fetch('https://jsonplaceholder.ir/posts/1', {
 ```js
 fetch('https://jsonplaceholder.ir/posts/1', {
   method: 'DELETE',
-});
+})
 ```
 
 ### Filtering resources
@@ -139,8 +139,8 @@ Basic filtering is supported through query parameters.
 ```js
 // Will return all the posts that belong to the first user
 fetch('https://jsonplaceholder.ir/posts?userId=1')
-  .then((response) => response.json())
-  .then((json) => console.log(json));
+  .then(response => response.json())
+  .then(json => console.log(json))
 ```
 
 ### Nested resources
@@ -150,8 +150,8 @@ One level of nested route is available.
 ```js
 // equivalent to /comments?postId=1
 fetch('https://jsonplaceholder.ir/posts/1/comments')
-  .then((response) => response.json())
-  .then((json) => console.log(json));
+  .then(response => response.json())
+  .then(json => console.log(json))
 ```
 
 Here's the list of available nested routes:
@@ -168,24 +168,24 @@ All of the requests are available in https://jsonplaceholder.ir/graphql with dif
 
 ```js
 // For example:get all data for one topic
-let queryAllPosts = '{ posts { title body } }';
-let queryAllComments = '{ comments { name email } }';
-let queryAllAlbums = '{ albums { userId title } }';
-let queryAllPhotos = '{ photos { title url } }';
-let queryAllTodos = '{ todos { title completed } }';
-let queryAllUsers = '{ users { username email } }';
+let queryAllPosts = '{ posts { title body } }'
+let queryAllComments = '{ comments { name email } }'
+let queryAllAlbums = '{ albums { userId title } }'
+let queryAllPhotos = '{ photos { title url } }'
+let queryAllTodos = '{ todos { title completed } }'
+let queryAllUsers = '{ users { username email } }'
 
 // For example:get specific data by id
-let queryOnePost = '{ post(id:2)  { title body } }';
-let queryOneComment = '{ comment(id:3) { name email } }';
-let queryOneAlbum = '{ album(id:4) { userId title } }';
-let queryOnePhoto = '{ photo(id:5) { title url } }';
-let queryOneTodo = '{ todo(id:6) { title completed } }';
-let queryOneUser = '{ user(id:7) { username email } }';
+let queryOnePost = '{ post(id:2)  { title body } }'
+let queryOneComment = '{ comment(id:3) { name email } }'
+let queryOneAlbum = '{ album(id:4) { userId title } }'
+let queryOnePhoto = '{ photo(id:5) { title url } }'
+let queryOneTodo = '{ todo(id:6) { title completed } }'
+let queryOneUser = '{ user(id:7) { username email } }'
 // and ...
 
 // Or use request package to fetch data as JSON file format
-const request = require('request');
+const request = require('request')
 
 request(
   {
@@ -196,9 +196,9 @@ request(
     },
   },
   (err, res, data) => {
-    console.log(data);
+    console.log(data)
   }
-);
+)
 
 // Fetch data as JSON file format
 fetch('https://jsonplaceholder.ir/graphql', {
@@ -208,11 +208,6 @@ fetch('https://jsonplaceholder.ir/graphql', {
     'Content-type': 'application/json; charset=UTF-8',
   },
 })
-  .then((response) => response.json())
-  .then((json) => console.log(json));
+  .then(response => response.json())
+  .then(json => console.log(json))
 ```
-
-## ToDo
-
-- Add meaningful data
-- Add pagination
