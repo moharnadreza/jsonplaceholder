@@ -1,4 +1,4 @@
-const nodemailer = require('nodemailer');
+const nodemailer = require('nodemailer')
 
 const transporter = nodemailer.createTransport({
   service: 'gmail',
@@ -9,15 +9,15 @@ const transporter = nodemailer.createTransport({
     user: 'sender@gmail.com',
     pass: 'senderPassword',
   },
-});
+})
 
 const mailOptions = {
   from: 'sender@gmail.com',
   to: 'receiver@gmail.com',
   subject: 'Number of request to Jsonplaceholder Api',
-};
+}
 
 module.exports = {
   transporter,
   mailOptions,
-};
+}

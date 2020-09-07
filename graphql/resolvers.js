@@ -43,8 +43,8 @@ const resolvers = {
     },
     user: (parent, args) => {
       return getDataById('users', args['id'])
-    }
-  }
+    },
+  },
 }
 
 module.exports = resolvers
