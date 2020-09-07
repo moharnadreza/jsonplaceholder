@@ -15,8 +15,7 @@
     "url": "https://github.com/ziadzadeh/PersianJSONPlaceholder.git"
   },
   "scripts": {
-    "start": "node index",
-    "test": "node test/app"
+    "start": "node index"
   },
   "dependencies": {
     "apollo-server-express": "^2.11.0",
