@@ -15,8 +15,7 @@
     "url": "https://github.com/ziadzadeh/PersianJSONPlaceholder.git"
   },
   "scripts": {
-    "start": "node index",
-    "pretty": "prettier --write --tab-width 4 \"src/**/*.js\""
+    "start": "node index"
   },
   "husky": {
     "hooks": {
