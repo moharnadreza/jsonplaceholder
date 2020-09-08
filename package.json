@@ -28,6 +28,7 @@
   },
   "devDependencies": {
     "Faker": "^0.7.2",
+    "prettier": "2.1.1",
     "rosie": "^2.0.1",
     "underscore": "^1.9.2"
   },
@@ -37,7 +38,10 @@
   "license": "MIT",
   "husky": {
     "hooks": {
-      "pre-commit": "npm test"
+      "pre-commit": "lint-staged"
     }
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
   }
 }
