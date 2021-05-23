@@ -1,8 +1,0 @@
-<svg id="browser-outline" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-  <g id="browser">
-    <rect id="Rectangle_10" data-name="Rectangle 10" width="24" height="24" fill="#00e9a2" opacity="0"/>
-    <path id="Path_25" data-name="Path 25" d="M18,3H6A3,3,0,0,0,3,6V18a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V6A3,3,0,0,0,18,3Zm1,15a1,1,0,0,1-1,1H6a1,1,0,0,1-1-1V11H19ZM5,9V6A1,1,0,0,1,6,5H18a1,1,0,0,1,1,1V9Z" fill="#00e9a2"/>
-    <circle id="Ellipse_8" data-name="Ellipse 8" cx="1" cy="1" r="1" transform="translate(7 6.03)" fill="#00e9a2"/>
-    <circle id="Ellipse_9" data-name="Ellipse 9" cx="1" cy="1" r="1" transform="translate(11 6.03)" fill="#00e9a2"/>
-  </g>
-</svg>
