@@ -15,6 +15,7 @@ out
 # production
 build
 dist
+api/public
 
 # misc
 .DS_Store
