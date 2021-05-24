@@ -4,11 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev -p 4000",
-    "build": "next build",
+    "move": "mkdir ./api/public && mv out/* ./api/public",
+    "build": "rimraf out && rimraf ./api/public && next build && next export && yarn move && rimraf out",
     "start": "next start",
     "watch": "cd api && tsc -w",
     "dev:api": "nodemon api/dist/api/src/index.js",
-    "start:api": "node dist/src/index.js"
+    "start:api": "node api/dist/api/src/index.js"
   },
   "dependencies": {
     "apollo-server-express": "^2.24.1",
