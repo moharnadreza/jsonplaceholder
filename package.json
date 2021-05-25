@@ -1,7 +1,12 @@
 {
   "name": "jsonplaceholder",
-  "version": "1.0.3",
-  "private": true,
+  "version": "2.0.0",
+  "description": "RTL fake REST/GraphQL API for testing and prototyping.",
+  "homepage": "https://jsonplaceholder.ir",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/moharnadreza/jsonPlaceholder.git"
+  },
   "scripts": {
     "dev": "next dev -p 4000",
     "cleanup": "rimraf out && rimraf ./api/public",
