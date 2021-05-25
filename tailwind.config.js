@@ -7,7 +7,7 @@ module.exports = {
   darkMode: false,
   theme: {
     fontFamily: {
-      base: "Roboto Mono",
+      base: "Roboto Mono, monospace",
     },
     colors: {
       gray: {
