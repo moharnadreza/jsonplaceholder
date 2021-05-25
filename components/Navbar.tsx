@@ -17,7 +17,7 @@ const Navbar: FC = (): JSX.Element => {
       </div>
       <Link
         label="GitHub"
-        href="https://github.com/moharnadreza/PersianJSONPlaceholder"
+        href="https://github.com/moharnadreza/jsonPlaceholder"
         title="Repo on GitHub"
       />
     </div>
