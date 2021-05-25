@@ -4,17 +4,19 @@
   "private": true,
   "scripts": {
     "dev": "next dev -p 4000",
+    "cleanup": "rimraf out && rimraf ./api/public",
     "move": "mkdir ./api/public && mv out/* ./api/public",
-    "build": "rimraf out && rimraf ./api/public && next build && next export && yarn move && rimraf out",
-    "start": "next start",
-    "watch": "cd api && tsc -w",
+    "build:frontend": "yarn cleanup && next build && next export && yarn move",
+    "start:frontend": "next start",
+    "watch:api": "cd api && tsc",
     "dev:api": "nodemon api/dist/api/src/index.js",
-    "start:api": "node api/dist/api/src/index.js"
+    "start": "node api/dist/api/src/index.js"
   },
   "dependencies": {
     "apollo-server-express": "^2.24.1",
     "classnames": "^2.3.1",
     "clone": "^2.1.2",
+    "cors": "^2.8.5",
     "graphql": "^15.5.0",
     "json-server": "^0.16.3",
     "next": "10.1.1",
