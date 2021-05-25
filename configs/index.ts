@@ -1,0 +1,1 @@
+export const SPLITBEE_TOKEN = process.env.NEXT_PUBLIC_SPLITBEE_TOKEN;
