@@ -19,6 +19,7 @@
     "start": "node api/dist/api/src/index.js"
   },
   "dependencies": {
+    "@splitbee/web": "^0.2.4",
     "apollo-server-express": "^2.24.1",
     "classnames": "^2.3.1",
     "clone": "^2.1.2",
