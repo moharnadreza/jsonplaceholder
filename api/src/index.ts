@@ -1,6 +1,7 @@
 import { ApolloServer } from "apollo-server-express";
 import jsonServer from "json-server";
 import clone from "clone";
+import cors from "cors";
 
 import data from "../../data.json";
 
@@ -20,7 +21,9 @@ const apolloServer = new ApolloServer({
 // apply app to apollo server
 apolloServer.applyMiddleware({ app });
 
-// rest stuff
+// enabling cors
+app.use(cors());
+
 app.use((req, _, next) => {
   if (req.path === "/") {
     return next();
