@@ -1,213 +1,54 @@
-# PersianJSONPlaceholder
+<h3 align="center">jsonPlaceholder</h3>
 
-[Persian JSONPlaceholder](https://jsonplaceholder.ir) is a simple fake REST API for testing and prototyping.
+<h6 align="center">
+  RTL fake REST/GraphQL API for testing and prototyping.
+</h3>
 
-Read [this post on Virgool.io](https://virgool.io/raychat/persianjsonplaceholder-mtwhgc0poehp) for more information about it.
+#### Resources
 
-## Why?
+- [`/posts`](https://jsonplaceholder.ir/posts)
+- [`/comments`](https://jsonplaceholder.ir/comments)
+- [`/photos`](https://jsonplaceholder.ir/photos)
+- [`/todos`](https://jsonplaceholder.ir/todos)
+- [`/users`](https://jsonplaceholder.ir/users)
 
-Most of the time when trying a new library, hacking a prototype or following a tutorial, I found myself in need of some Persian data, So I decided to make Persian version of https://jsonplaceholder.typicode.com.
+#### How to
 
-You can find it running here and are free to use it in your developments: https://jsonplaceholder.ir.
+Here's an example to get a list of fake users:
 
-I hope you will find it useful.
-
-## Available resources
-
-Let's start with resources, JSONPlaceholder provides the usual suspects:
-
-- Posts https://jsonplaceholder.ir/posts
-- Comments https://jsonplaceholder.ir/comments
-- Albums https://jsonplaceholder.ir/albums
-- Photos https://jsonplaceholder.ir/photos
-- Users https://jsonplaceholder.ir/users
-- Todos https://jsonplaceholder.ir/todos
-
-## How to
-
-Here's some code using [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) showing what can be done with JSONPlaceholder.
-
-### Showing a resource
-
-```js
-fetch('https://jsonplaceholder.ir/posts/1')
+```ts
+fetch("https://jsonplaceholder.ir/users")
   .then(response => response.json())
-  .then(json => console.log(json))
+  .then(json => console.log(json)); // returns an array of users
 ```
 
-### Listing resources
+##### Single resource
 
-```js
-fetch('https://jsonplaceholder.ir/posts')
-  .then(response => response.json())
-  .then(json => console.log(json))
-```
+You can get single resource for any data group by `id` property, for example, [`/users/1`](https://jsonplaceholder.ir/users/1).
 
-### Creating a resource
+##### Filtering
 
-```js
-// POST adds a random id to the object sent
-fetch('https://jsonplaceholder.ir/posts', {
-  method: 'POST',
-  body: JSON.stringify({
-    title: 'foo',
-    body: 'bar',
-    userId: 1,
-  }),
-  headers: {
-    'Content-type': 'application/json; charset=UTF-8',
-  },
+Any kind of filtering is doable using query string like [`/posts?userId=2`](https://jsonplaceholder.ir/posts?userId=2) or [`/todos?completed=true`](https://jsonplaceholder.ir/todos?completed=true).
+
+##### Nested resources
+
+One level of nested route is available only for `/posts` and `/users` data groups, for instance [`/posts/4/comments`](https://jsonplaceholder.ir/posts/4/comments) or [`/users/1/todos`](https://jsonplaceholder.ir/users/4/todos).
+
+#### Methods
+
+`CRUD` operations are available for all data groups, that means you can use `POST`, `GET`, `PUT`, `DELETE` or other http methods to create, read, update or delete resources, which will be faked as if.
+
+```ts
+// updating a resource
+
+fetch("https://jsonplaceholder.ir/posts/6", {
+  method: "PUT",
+  body: JSON.stringify({ title: "foo", body: "bar", userId: 4 }),
 })
   .then(response => response.json())
-  .then(json => console.log(json))
-
-/* will return
-{
-  id: 100,
-  title: 'foo',
-  body: 'bar',
-  userId: 1
-}
-*/
+  .then(json => console.log(json));
 ```
 
-Note: these resources will not be really created / updated or deleted on the server but it will be faked as if.
+#### GraphQL
 
-### Updating a resource
-
-```js
-fetch('https://jsonplaceholder.ir/posts/1', {
-  method: 'PUT',
-  body: JSON.stringify({
-    id: 1,
-    title: 'foo',
-    body: 'bar',
-    userId: 1,
-  }),
-  headers: {
-    'Content-type': 'application/json; charset=UTF-8',
-  },
-})
-  .then(response => response.json())
-  .then(json => console.log(json))
-
-/* will return
-{
-  id: 1,
-  title: 'foo',
-  body: 'bar',
-  userId: 1
-}
-*/
-```
-
-```js
-fetch('https://jsonplaceholder.ir/posts/1', {
-  method: 'PATCH',
-  body: JSON.stringify({
-    title: 'foo',
-  }),
-  headers: {
-    'Content-type': 'application/json; charset=UTF-8',
-  },
-})
-  .then(response => response.json())
-  .then(json => console.log(json))
-
-/* will return
-{
-  id: 1,
-  title: 'foo',
-  body: 'quia et suscipit [...]',
-  userId: 1
-}
-*/
-```
-
-### Deleting a resource
-
-```js
-fetch('https://jsonplaceholder.ir/posts/1', {
-  method: 'DELETE',
-})
-```
-
-### Filtering resources
-
-Basic filtering is supported through query parameters.
-
-```js
-// Will return all the posts that belong to the first user
-fetch('https://jsonplaceholder.ir/posts?userId=1')
-  .then(response => response.json())
-  .then(json => console.log(json))
-```
-
-### Nested resources
-
-One level of nested route is available.
-
-```js
-// equivalent to /comments?postId=1
-fetch('https://jsonplaceholder.ir/posts/1/comments')
-  .then(response => response.json())
-  .then(json => console.log(json))
-```
-
-Here's the list of available nested routes:
-
-- https://jsonplaceholder.ir/posts/1/comments
-- https://jsonplaceholder.ir/albums/1/photos
-- https://jsonplaceholder.ir/users/1/albums
-- https://jsonplaceholder.ir/users/1/todos
-- https://jsonplaceholder.ir/users/1/posts
-
-### Use JSONPlaceholder with GraphQL
-
-All of the requests are available in https://jsonplaceholder.ir/graphql with different queries, get needed params for each one :)
-
-```js
-// For example:get all data for one topic
-let queryAllPosts = '{ posts { title body } }'
-let queryAllComments = '{ comments { name email } }'
-let queryAllAlbums = '{ albums { userId title } }'
-let queryAllPhotos = '{ photos { title url } }'
-let queryAllTodos = '{ todos { title completed } }'
-let queryAllUsers = '{ users { username email } }'
-
-// For example:get specific data by id
-let queryOnePost = '{ post(id:2)  { title body } }'
-let queryOneComment = '{ comment(id:3) { name email } }'
-let queryOneAlbum = '{ album(id:4) { userId title } }'
-let queryOnePhoto = '{ photo(id:5) { title url } }'
-let queryOneTodo = '{ todo(id:6) { title completed } }'
-let queryOneUser = '{ user(id:7) { username email } }'
-// and ...
-
-// Or use request package to fetch data as JSON file format
-const request = require('request')
-
-request(
-  {
-    method: 'POST',
-    url: 'https://jsonplaceholder.ir/graphql',
-    json: {
-      query: queryOnePhoto,
-    },
-  },
-  (err, res, data) => {
-    console.log(data)
-  }
-)
-
-// Fetch data as JSON file format
-fetch('https://jsonplaceholder.ir/graphql', {
-  method: 'POST',
-  body: JSON.stringify(queryOneUser),
-  headers: {
-    'Content-type': 'application/json; charset=UTF-8',
-  },
-})
-  .then(response => response.json())
-  .then(json => console.log(json))
-```
+All of the resources are available also with GraphQL, Try out [GraphQL Playground](https://jsonplaceholder.ir/graphql) for more details.
