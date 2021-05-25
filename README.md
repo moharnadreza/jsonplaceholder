@@ -1,11 +1,8 @@
 <div align="center">
   <img src="https://user-images.githubusercontent.com/53334880/119559594-20fcc280-bdb8-11eb-8244-b721cc0c55a9.png" alt="React Toast" />
   <h3>jsonPlaceholder</h3>
+  <p>RTL fake REST/GraphQL API for testing and prototyping.</p>
 </div>
-
-<h6 align="center">
-  RTL fake REST/GraphQL API for testing and prototyping.
-</h3>
 
 ### Resources
 
