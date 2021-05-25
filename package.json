@@ -1,5 +1,6 @@
 {
   "name": "jsonplaceholder",
+  "license": "MIT",
   "version": "2.0.0",
   "description": "RTL fake REST/GraphQL API for testing and prototyping.",
   "homepage": "https://jsonplaceholder.ir",
