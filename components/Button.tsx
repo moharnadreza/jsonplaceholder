@@ -9,7 +9,7 @@ export interface Props {
   variant?: "primary" | "secondary" | "text";
 }
 
-const Link: FC<Props> = ({
+const Button: FC<Props> = ({
   children,
   onClick = () => {
     // default
@@ -38,4 +38,4 @@ const Link: FC<Props> = ({
   );
 };
 
-export default Link;
+export default Button;
