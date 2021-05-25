@@ -17,7 +17,7 @@
   }
 
   h1 {
-    @apply text-3xl md:text-6xl;
+    @apply text-2xl sm:text-3xl md:text-6xl;
   }
 
   h2 {
