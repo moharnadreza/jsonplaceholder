@@ -17,7 +17,7 @@ const Layout: FC = ({ children }): JSX.Element => {
           content="RTL fake REST/GraphQL API for testing and prototyping."
         />
         <title>
-          jsonPlaceholder | RTL fake REST/GraphQL API for testing and
+          jsonplaceholder | RTL fake REST/GraphQL API for testing and
           prototyping.
         </title>
       </Head>

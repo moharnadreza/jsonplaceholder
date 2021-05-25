@@ -6,7 +6,7 @@
   "homepage": "https://jsonplaceholder.ir",
   "repository": {
     "type": "git",
-    "url": "https://github.com/moharnadreza/jsonPlaceholder.git"
+    "url": "https://github.com/moharnadreza/jsonplaceholder.git"
   },
   "scripts": {
     "dev": "next dev -p 4000",

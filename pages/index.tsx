@@ -30,7 +30,7 @@ const Home = (): JSX.Element => {
   return (
     <>
       <div className="flex flex-col text-center py-12 md:py-32 max-w-xl m-auto">
-        <h1>jsonPlaceholder</h1>
+        <h1>jsonplaceholder</h1>
         <p className="leading-loose max-w-md m-auto mt-8">
           RTL fake REST/GraphQL API for testing and prototyping, based on{" "}
           <Link
