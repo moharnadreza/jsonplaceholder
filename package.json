@@ -1,49 +1,51 @@
 {
   "name": "jsonplaceholder",
-  "version": "1.0.3",
-  "description": "Persian Fake online REST/GraphQL API server for testing and prototyping.",
-  "keywords": [
-    "json",
-    "prototype",
-    "jsonplaceholder",
-    "graphql",
-    "rest"
-  ],
+  "license": "MIT",
+  "version": "2.0.0",
+  "description": "RTL fake REST/GraphQL API for testing and prototyping.",
   "homepage": "https://jsonplaceholder.ir",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ziadzadeh/PersianJSONPlaceholder.git"
+    "url": "https://github.com/moharnadreza/jsonPlaceholder.git"
   },
   "scripts": {
-    "start": "node index"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "**/*": "prettier --write --ignore-unknown"
+    "dev": "next dev -p 4000",
+    "cleanup": "rimraf out && rimraf ./api/public",
+    "move": "mkdir ./api/public && mv out/* ./api/public",
+    "build:frontend": "yarn cleanup && next build && next export && yarn move",
+    "start:frontend": "next start",
+    "watch:api": "cd api && tsc",
+    "dev:api": "nodemon api/dist/api/src/index.js",
+    "start": "node api/dist/api/src/index.js"
   },
   "dependencies": {
-    "apollo-server-express": "^2.11.0",
+    "apollo-server-express": "^2.24.1",
+    "classnames": "^2.3.1",
     "clone": "^2.1.2",
     "cors": "^2.8.5",
-    "graphql": "^14.6.0",
-    "json-server": "^0.16.1",
-    "node": "^13.12.0",
-    "request": "^2.88.2"
+    "graphql": "^15.5.0",
+    "json-server": "^0.16.3",
+    "next": "10.1.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
   },
   "devDependencies": {
-    "Faker": "^0.7.2",
-    "husky": "^4.3.0",
-    "lint-staged": "^10.3.0",
-    "prettier": "2.1.1",
-    "rosie": "^2.0.1",
-    "underscore": "^1.9.2"
-  },
-  "engines": {
-    "node": "10.x"
-  },
-  "license": "MIT"
+    "@types/clone": "^2.1.0",
+    "@types/json-server": "^0.14.3",
+    "@types/node": "^14.0.27",
+    "@types/react": "^17.0.3",
+    "@typescript-eslint/eslint-plugin": "^4.24.0",
+    "@typescript-eslint/parser": "^4.24.0",
+    "autoprefixer": "^9.8.6",
+    "eslint": "^7.27.0",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "nodemon": "^2.0.4",
+    "postcss": "^7.0.35",
+    "prettier": "2.2.1",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.1.2",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7"
+  }
 }
