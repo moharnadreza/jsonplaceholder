@@ -1,6 +1,6 @@
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/53334880/119559594-20fcc280-bdb8-11eb-8244-b721cc0c55a9.png" title="jsonPlaceholder | RTL fake REST/GraphQL API for testing and prototyping" alt="jsonplaceholder" />
-  <h3>jsonPlaceholder</h3>
+  <img src="https://user-images.githubusercontent.com/53334880/119559594-20fcc280-bdb8-11eb-8244-b721cc0c55a9.png" title="jsonplaceholder | RTL fake REST/GraphQL API for testing and prototyping" alt="jsonplaceholder" />
+  <h3>jsonplaceholder</h3>
   <h6>RTL fake REST/GraphQL API for testing and prototyping.</h6>
 </div>
 

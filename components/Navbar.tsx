@@ -9,16 +9,16 @@ const Navbar: FC = (): JSX.Element => {
       <div className="flex-1 flex items-center">
         <Image
           src="/logo.png"
-          alt="jsonplaceholder logo"
           width={32}
           height={32}
-          layout="intrinsic"
+          alt="jsonplaceholder logo"
+          className="select-none"
         />
-        <span className="text-xs ml-4 md:text-sm md:flex">jsonPlaceholder</span>
+        <span className="text-xs ml-4 md:text-sm md:flex">jsonplaceholder</span>
       </div>
       <Link
         label="GitHub"
-        href="https://github.com/moharnadreza/jsonPlaceholder"
+        href="https://github.com/moharnadreza/jsonplaceholder"
         title="Repo on GitHub"
       />
     </div>

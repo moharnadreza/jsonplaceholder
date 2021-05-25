@@ -39,7 +39,7 @@ const SampleCodePlayground: FC<Props> = ({
         . Check
         <Link
           label="how to"
-          href="https://github.com/moharnadreza/jsonPlaceholder#how-to"
+          href="https://github.com/moharnadreza/jsonplaceholder#how-to"
           title="README.md | How to?"
           className="mx-2"
         />
