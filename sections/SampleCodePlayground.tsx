@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { Fragment, FC } from "react";
 
 import { Button, Link } from "components";
 import { methods, resolvers } from "consts";
@@ -19,22 +19,22 @@ const SampleCodePlayground: FC<Props> = ({
       <p className="leading-loose flex-initial items-center">
         Try{" "}
         {methods.map((method, i) => (
-          <>
+          <Fragment key={i}>
             <Button variant="text" onClick={() => onMethodChange(method)}>
               {method.method}
             </Button>
             {i !== methods.length - 1 && ", "}
-          </>
+          </Fragment>
         ))}{" "}
         or other HTTP methods on{" "}
         {resolvers.map((resolver, i) => (
-          <>
+          <Fragment key={i}>
             {i === resolvers.length - 1 && " or "}
             <Button variant="text" onClick={() => onResolverChange(resolver)}>
               /{resolver}
             </Button>
             {i !== resolvers.length - 1 && i !== resolvers.length - 2 && ", "}
-          </>
+          </Fragment>
         ))}
         . Check
         <Link
