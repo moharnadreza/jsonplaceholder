@@ -9,12 +9,13 @@
     "url": "https://github.com/moharnadreza/jsonplaceholder.git"
   },
   "scripts": {
-    "dev": "next dev -p 4000",
+    "dev:frontend": "next dev",
     "cleanup": "rimraf out && rimraf ./api/public",
     "move": "mkdir ./api/public && mv out/* ./api/public",
     "build:frontend": "yarn cleanup && next build && next export && yarn move",
     "start:frontend": "next start",
-    "watch:api": "cd api && tsc",
+    "watch:api": "cd api && tsc -w",
+    "build:api": "cd api && tsc",
     "dev:api": "nodemon api/dist/api/src/index.js",
     "start": "node api/dist/api/src/index.js"
   },
