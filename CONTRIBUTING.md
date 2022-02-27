@@ -4,7 +4,7 @@ Pull requests are welcome. Clone the project using `git clone https://github.com
 
 #### Running on your machine
 
-For running the APi in development mode, use `yarn watch:api` and then `yarn dev:api`, also for the frontend use `yarn dev:frontend`.
+For running the API in development mode, use `yarn watch:api` and then `yarn dev:api`, also for the frontend use `yarn dev:frontend`.
 
 #### Creating the PR
 
