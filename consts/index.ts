@@ -1,23 +1,5 @@
-export const methods = [
-  {
-    method: "GET",
-    body: `{
+export const SAMPLE_CODE = `fetch('https://jsonplaceholder.ir/users', {
   method: 'GET',
-}`,
-  },
-  {
-    method: "POST",
-    body: `{
-  method: 'POST',
-  body: JSON.stringify({ name: "Mohammadreza" })
-}`,
-  },
-] as const;
-
-export const resolvers = [
-  "posts",
-  "comments",
-  "photos",
-  "todos",
-  "users",
-] as const;
+})
+  .then(response => response.json())
+  .then(json => console.log(json))`;
