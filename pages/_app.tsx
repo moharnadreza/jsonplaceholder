@@ -1,15 +1,16 @@
-import { AppProps } from "next/app";
 import splitbee from "@splitbee/web";
-
-import { Layout } from "components";
+import Layout from "components/Layout";
 import { SPLITBEE_TOKEN } from "configs";
+import { AppProps } from "next/app";
 import "styles/globals.css";
 
 splitbee.init({
   token: SPLITBEE_TOKEN,
 });
 
-const App = ({ Component, pageProps }: AppProps): JSX.Element => {
+type Props = AppProps;
+
+const App = ({ Component, pageProps }: Props): JSX.Element => {
   return (
     <Layout>
       <Component {...pageProps} />

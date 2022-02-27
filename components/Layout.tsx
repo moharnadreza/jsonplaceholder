@@ -1,9 +1,13 @@
-import { FC } from "react";
 import Head from "next/head";
 
-import { Navbar } from "components";
+import Navbar from "components/Navbar";
+import type { ReactChild } from "react";
 
-const Layout: FC = ({ children }): JSX.Element => {
+type Props = {
+  children: ReactChild;
+};
+
+const Layout = ({ children }: Props): JSX.Element => {
   return (
     <>
       <Head>
