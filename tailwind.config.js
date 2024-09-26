@@ -1,10 +1,10 @@
 module.exports = {
-  purge: [
+  content: [
     "./pages/**/*.{ts,tsx}",
     "./sections/**/*.{ts,tsx}",
     "./components/**/*.{ts,tsx}",
   ],
-  darkMode: false,
+  darkMode: "media",
   theme: {
     fontFamily: {
       base: "Roboto Mono, monospace",
