@@ -10,7 +10,7 @@ const Home = (): JSX.Element => {
         <p className="leading-loose max-w-md m-auto mt-8">
           RTL fake REST/GraphQL API for testing and prototyping, based on{" "}
           <Link
-            label={`{JSON}Placeholder`}
+            label="{JSON}Placeholder"
             href="https://github.com/typicode/jsonplaceholder"
             title="A simple online fake REST API server by @typicode."
           />
@@ -21,8 +21,8 @@ const Home = (): JSX.Element => {
           <Link
             variant="button"
             label="GraphQL Playground"
-            href="http://jsonplaceholder.ir/graphql"
-            className="bg-graphql-light hover:bg-graphql-dark"
+            href="/graphql"
+            className="!bg-graphql-light hover:!bg-graphql-dark"
           />
         </div>
 
