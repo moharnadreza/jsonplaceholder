@@ -12,10 +12,11 @@
     "dev:frontend": "next dev",
     "cleanup": "rimraf out && rimraf ./api/public",
     "move": "mkdir ./api/public && mv out/* ./api/public",
-    "build:frontend": "yarn cleanup && next build && next export && yarn move",
+    "build:frontend": "yarn cleanup && next build",
     "start:frontend": "next start",
     "watch:api": "cd api && tsc -w",
     "build:api": "cd api && tsc",
+    "build": "yarn build:api && yarn build:frontend",
     "dev:api": "nodemon api/dist/api/src/index.js",
     "start": "node api/dist/api/src/index.js"
   },
@@ -27,27 +28,27 @@
     "cors": "^2.8.5",
     "graphql": "^15.5.0",
     "json-server": "^0.16.3",
-    "next": "10.1.1",
-    "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "next": "^14.2.11",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "@types/clone": "^2.1.0",
     "@types/json-server": "^0.14.3",
     "@types/node": "^14.0.27",
-    "@types/react": "^17.0.3",
+    "@types/react": "^18.3.6",
     "@typescript-eslint/eslint-plugin": "^4.24.0",
     "@typescript-eslint/parser": "^4.24.0",
-    "autoprefixer": "^9.8.6",
+    "autoprefixer": "^10.4.20",
     "eslint": "^7.27.0",
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react": "^7.23.2",
     "eslint-plugin-react-hooks": "^4.2.0",
     "nodemon": "^2.0.4",
-    "postcss": "^8.4.31",
+    "postcss": "^8.4.47",
     "prettier": "2.2.1",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.1.2",
+    "tailwindcss": "^3.4.11",
     "ts-node": "^8.10.2",
-    "typescript": "^3.9.7"
+    "typescript": "^5.6.2"
   }
 }

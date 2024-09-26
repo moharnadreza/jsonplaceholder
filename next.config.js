@@ -1,6 +1,12 @@
-module.exports = {
+/**
+ * @type {import('next').NextConfig}
+ */
+const nextConfig = {
+  output: "export",
+  distDir: "api/public",
   images: {
-    loader: "imgix",
-    path: "/",
+    unoptimized: true,
   },
 };
+
+module.exports = nextConfig;
